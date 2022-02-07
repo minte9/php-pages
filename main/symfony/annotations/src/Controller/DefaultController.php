@@ -6,10 +6,10 @@
  * Install Annotations:
  *      composer require annotations
  * 
- * config/routes.yaml not needed 
+ * config/routes.yaml not needed
  * 
  * http://localhost:8000/hello/Symfony
- *      Hello Simfony 
+ *      Hello Simfony
  */
 
 namespace App\Controller;
