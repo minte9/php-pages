@@ -1,4 +1,6 @@
 composer create-project symfony/skeleton annotations
+
+cd annotations/
 composer require annotations
 
 cd annotations/public/
