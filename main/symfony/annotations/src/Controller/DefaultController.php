@@ -34,4 +34,10 @@ class DefaultController
     {
         return new Response("Hello $name!");
     }
+
+    // @Route("/go")
+    public function go() // Wrong
+    {
+        return new Response("go");
+    }
 }
