@@ -13,10 +13,8 @@ git clone https://github.com/minte9/php-pages.git
 ## Updates
 
 ~~~sh
-# repo
 git pull origin main
 
-# package
 cd main/symfony/annotations/
 composer update
 ~~~
