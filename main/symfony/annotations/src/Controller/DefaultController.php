@@ -34,8 +34,4 @@ class DefaultController
     {
         return new Response("Hello $name!");
     }
-
-    // @Route("/go")
-    public function go() {} # wrong annotation
-
 }
