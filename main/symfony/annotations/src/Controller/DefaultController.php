@@ -27,7 +27,7 @@ class DefaultController
         return new Response("Hello World!");
     }
 
-    /**
+    /** 
      * @Route("/hello/{name}")
      */
     public function hello($name)
@@ -36,8 +36,6 @@ class DefaultController
     }
 
     // @Route("/go")
-    public function go() // Wrong
-    {
-        return new Response("go");
-    }
+    public function go() {} # wrong annotation
+
 }
