@@ -1,7 +1,7 @@
 <?php 
 
 /**
- * Default Controller
+ * Default Controllerx
  * 
  * Install Annotations:
  *      composer require annotations
