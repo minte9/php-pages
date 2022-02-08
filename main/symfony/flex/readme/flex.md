@@ -3,11 +3,7 @@
 
 # Flex installs a recipe for symfony/twig-bundle
 # A recipe is a way for a library to automatically configure itself.
- 
-# To uninstall a recipe:
-#
-#   composer remove profiler
-#   composer remove api
+
 
 composer create-project symfony/skeleton flex
 
@@ -18,3 +14,9 @@ composer require api
 
 cd public/
 php -S localhost:8000
+
+
+# To uninstall a recipe:
+#
+#   composer remove profiler
+#   composer remove api
