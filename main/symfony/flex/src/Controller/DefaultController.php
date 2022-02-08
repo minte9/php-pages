@@ -5,6 +5,9 @@
  * 
  * http://localhost:8000/hello/Symfony
  *      Hello Simfony
+ * 
+ * Starting from Symfony 5.0 ...
+ * support for PHP templates is removed
  */
 
 namespace App\Controller;
