@@ -12,7 +12,7 @@ http://localhost:8000
     # Welcome to Symfony
 ~~~
 
-# Apache httpd
+# Httpd
 
 /**
     For production Apache server add .htaccess in routes/ directory
