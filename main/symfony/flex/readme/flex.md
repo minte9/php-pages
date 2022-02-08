@@ -1,6 +1,6 @@
 # Twig
 
-/*
+/**  
     Twig is not the name of a Composer package (it is a Flex alias).  
     Flex resolves that alias for Composer.  
     Flex installs a recipe for symfony/twig-bundle.  
@@ -21,7 +21,9 @@ http://localhost:8000
     # Welcome to Symfony
 ~~~
 
-To uninstall a recipe:
+/**
+    To uninstall a recipe:
+*/
 
 ~~~sh
 composer remove profiler
