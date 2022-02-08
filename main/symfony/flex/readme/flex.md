@@ -5,6 +5,7 @@
 # A recipe is a way for a library to automatically configure itself.
  
 # To uninstall a recipe:
+#
 #   composer remove profiler
 #   composer remove api
 
