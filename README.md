@@ -21,9 +21,9 @@ composer update
 
 ## Pages
 
-- [Symfony](#simfony) 
+- [Symfony](#symfony) 
 
-## Simfony
+## Symfony
   * routes/ [project/](./main/symfony/routes)
   * annotations/ [project/](./main/symfony/annotations)
   * flex/ [project/](./main/symfony/flex)
