@@ -21,9 +21,7 @@ composer update
 
 - [Symfony](#simfony) 
 
-* [simfony/](./main/symfony)
+## Simfony
   * [annotations/](./main/symfony/annotations)
   * [flex/](./main/symfony/flex)
   * [routes/](./main/symfony/routes)
-* [time/](./main/time)
-  * [delta.php](./main/time/delta.php)
