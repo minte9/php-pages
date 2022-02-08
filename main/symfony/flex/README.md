@@ -1,3 +1,5 @@
+# Flex project
+
 // Twig is not the name of a Composer package (it is a Flex alias).  
 // Flex resolves that alias for Composer.  
 
@@ -18,7 +20,7 @@ http://localhost:8000
     # Welcome to Symfony
 ~~~
 
-// Uninstall a recipe:  
+# Uninstall a recipe
 
 ~~~sh
 composer remove profiler
