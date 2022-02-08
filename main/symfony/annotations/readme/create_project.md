@@ -1,3 +1,5 @@
+# Annotations project
+
 ~~~sh
 composer create-project symfony/skeleton annotations  
 
