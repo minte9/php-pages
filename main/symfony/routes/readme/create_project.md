@@ -1,3 +1,6 @@
+# Routes project
+
+~~~sh
 composer create-project symfony/skeleton routes
 
 cd routes/public/
@@ -7,3 +10,4 @@ symfony server:start
 
 http://localhost:8000
     # Welcome to Symfony
+~~~
