@@ -16,6 +16,8 @@ class DefaultController extends AbstractController
 {
     /**
      * @Route("/hello/{name}")
+     * 
+     * templates/default/index.html.twig
      */
     public function hello($name)
     {
