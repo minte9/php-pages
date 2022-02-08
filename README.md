@@ -22,6 +22,6 @@ composer update
 - [Symfony](#simfony) 
 
 ## Simfony
-  * routes/ [project](./main/symfony/routes)
+  * routes/ [project/](./main/symfony/routes)
   * annotations/ [project/](./main/symfony/annotations)
   * flex/ [project/](./main/symfony/flex)
