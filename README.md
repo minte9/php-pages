@@ -26,4 +26,4 @@ composer update
 ## Symfony
   * routes/ [project/](./main/symfony/routes), [routes](./main/symfony/routes/config/routes.yaml), [controller](./main/symfony/routes/src/Controller/DefaultController.php)
   * annotations/ [project/](./main/symfony/annotations), [controller](./main/symfony/annotations/src/Controller/DefaultController.php)
-  * flex/ [project/](./main/symfony/flex), [controller](./main/symfony/flex/src/Controller/DefaultController.php)
+  * flex/ [project/](./main/symfony/flex), [controller](./main/symfony/flex/src/Controller/DefaultController.php), [index](./main/symfony/flex/templates/default/index.html.twig), [hello](./main/symfony/flex/templates/default/hello.html.twig)
