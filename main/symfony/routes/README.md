@@ -12,9 +12,7 @@ http://localhost:8000
     # Welcome to Symfony
 ~~~
 
-# Httpd
-
-// For production Apache server add .htaccess in routes/ directory.   
+# Httpd .htaccess
 
 ~~~sh
 RewriteEngine on
