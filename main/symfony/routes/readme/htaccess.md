@@ -1,3 +1,7 @@
+# Apache httpd
+
+For production Apache server add .htaccess in routes/ directory
+
 RewriteEngine on
 RewriteBase /routes/public/
 RewriteCond %{REQUEST_FILENAME} !-f
