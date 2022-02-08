@@ -2,6 +2,9 @@
 
 /**
  * src/Controller/DefaultController
+ * 
+ * http://localhost:8000/hello/Symfony
+ *      Hello Simfony
  */
 
 namespace App\Controller;
