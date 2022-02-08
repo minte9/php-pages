@@ -14,8 +14,8 @@ http://localhost:8000
 
 # Httpd
 
-/**
-    For production Apache server add .htaccess in routes/ directory
+/**  
+    For production Apache server add .htaccess in routes/ directory.  
 */
 
 ~~~sh
