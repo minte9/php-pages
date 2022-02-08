@@ -7,7 +7,7 @@
  *      Hello Simfony
  * 
  * Starting from Symfony 5.0 support for PHP templates was removed.
- * You can use only Twig for those templates.
+ * You can use only Twig templates.
  */
 
 namespace App\Controller;
