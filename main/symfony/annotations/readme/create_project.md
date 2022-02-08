@@ -1,5 +1,6 @@
 # Annotations project
 
+~~~sh
 composer create-project symfony/skeleton annotations  
 
 cd annotations/  
@@ -9,3 +10,4 @@ symfony server:start
 
 http://localhost:8000  
     # Welcome to Symfony
+~~~
