@@ -14,6 +14,9 @@ composer require api
 
 symfony server:start
 
+http://localhost:8000
+    # Welcome to Symfony
+
 
 # To uninstall a recipe:
 #
