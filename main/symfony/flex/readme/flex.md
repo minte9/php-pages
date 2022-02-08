@@ -21,8 +21,8 @@ http://localhost:8000
     # Welcome to Symfony
 ~~~
 
-/**
-    To uninstall a recipe:
+/**  
+    To uninstall a recipe:  
 */
 
 ~~~sh
