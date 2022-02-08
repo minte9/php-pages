@@ -23,7 +23,7 @@ class DefaultController
      */
     public function index()
     {
-        return new Response("Hello World!");
+        return new Response("Hello World");
     }
 
     /** 
@@ -31,6 +31,6 @@ class DefaultController
      */
     public function hello($name)
     {
-        return new Response("Hello $name!");
+        return new Response("Hello $name");
     }
 }
