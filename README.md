@@ -19,7 +19,7 @@ cd main/symfony/annotations/
 composer update
 ~~~
 
-## Pages
+##
 
 - [Symfony](#symfony) 
 
