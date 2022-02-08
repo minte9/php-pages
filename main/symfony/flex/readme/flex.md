@@ -12,8 +12,7 @@ composer require twig
 composer require profiler
 composer require api
 
-cd public/
-php -S localhost:8000
+symfony server:start
 
 
 # To uninstall a recipe:
