@@ -1,9 +1,9 @@
-composer create-project symfony/skeleton annotations
+composer create-project symfony/skeleton annotations  
 
-cd annotations/
-composer require annotations
+cd annotations/  
+composer require annotations  
 
-symfony server:start
+symfony server:start  
 
-http://localhost:8000
+http://localhost:8000  
     # Welcome to Symfony
