@@ -6,7 +6,8 @@
  * http://localhost:8000/hello/Symfony
  *      Hello Simfony
  * 
- * Starting from Symfony 5.0 support for PHP templates was removed
+ * Starting from Symfony 5.0 support for PHP templates was removed.
+ * You can use only Twig for those templates.
  */
 
 namespace App\Controller;
