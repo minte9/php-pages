@@ -13,6 +13,8 @@ index:
 page:
     path: /page/{id}
     controller: 'App\Controller\DefaultController::page'
+    defaults:
+        id: '1'
     requirements: 
         id: '\d+'
 

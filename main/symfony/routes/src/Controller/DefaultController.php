@@ -5,6 +5,7 @@
  * src/Controller/DefaultController.php
  * 
  * http://localhost:8000/                           # Hello World
+ * http://localhost:8000/page                       # Page 1
  * http://localhost:8000/page/2                     # Page 2
  * http://localhost:8000/php/symfony-routing-2      # php, symfony, routing, 2
  */
