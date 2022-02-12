@@ -27,7 +27,9 @@ use Psr\Log\LoggerInterface;
 
 class LogController extends AbstractController
 {
-    #[Route('/log/{id}')]
+    /**
+     * @Route("/log/{id}")
+     */
     public function index($id, LoggerInterface $logger) // Look Here
     {
         $logger->info("We are loggin id $id");
