@@ -2,8 +2,7 @@
 /**
  * Default Controller
  * 
- * Install Annotations (composer require annotations).
- * You don't need config/routes.yaml anymore.
+ * src/Controller/DefaultController.php
  * 
  * http://localhost:8000/           # Hello World
  * http://localhost:8000/page/2     # Page 2
