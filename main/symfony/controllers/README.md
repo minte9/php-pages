@@ -1,4 +1,4 @@
-* Controllers
+# Controllers
 
 To save time, you can install Symfony Maker and tell Symfony to generate a new controller class.
 
