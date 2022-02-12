@@ -19,10 +19,3 @@ symfony server:start
 http://localhost:8000
     # Welcome to Symfony
 ~~~
-
-# Uninstall a recipe
-
-~~~sh
-composer remove profiler
-composer remove api
-~~~
