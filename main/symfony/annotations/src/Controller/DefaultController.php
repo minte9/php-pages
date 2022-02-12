@@ -4,6 +4,8 @@
  * 
  * src/Controller/DefaultController.php
  * 
+ * Annotation adds route above method, config/routes.yaml not neeeded.
+ * 
  * http://localhost:8000/default/           # Index page
  * http://localhost:8000/default/hello      # Hello world
  * http://localhost:8000/default/page/3     # Page 3
