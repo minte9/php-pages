@@ -6,7 +6,7 @@
  * 
  * http://localhost:8000/                           # Hello World
  * http://localhost:8000/page/2                     # Page 2
- * http://localhost:8000/php/symfony-routing-2      # Path: php, symfony, routing, 2
+ * http://localhost:8000/php/symfony-routing-2      # php, symfony, routing, 2
  */
 
 namespace App\Controller;
@@ -30,6 +30,6 @@ class DefaultController
         $subcatg = explode("-", $slug)[0];
         $title   = explode("-", $slug)[1];
 
-        return new Response("Path: $catg, $subcatg, $title, $id");
+        return new Response("$catg, $subcatg, $title, $id");
     }
 }
