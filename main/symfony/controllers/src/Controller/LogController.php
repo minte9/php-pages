@@ -4,7 +4,6 @@
  * LogController
  * 
  * Symfony comes packed with a lot of usefull classes (services).
- * 
  * When you need a service in controller ...
  * type-hint an argument with its class (or interface) name.
 
@@ -26,7 +25,7 @@ use Symfony\Component\HttpFoundation\Session\SessionInterface;
 class LogController extends AbstractController
 {
     #[Route("/log/{id}")]
-    public function index($id, LoggerInterface $logger) // Look Here
+    public function index($id, LoggerInterface $logger)
     {
         $logger->info("We are loggin id $id");
         return new Response('logging');
