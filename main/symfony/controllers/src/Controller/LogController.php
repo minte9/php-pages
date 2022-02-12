@@ -25,33 +25,24 @@ use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
 class LogController extends AbstractController
 {
-    /**
-     * @Route("/log/{id}")
-     */
+    #[Route("/log/{id}")]
     public function index($id, LoggerInterface $logger) // Look Here
     {
         $logger->info("We are loggin id $id");
-
         return new Response('logging');
     }
 
-    /**
-     * @Route("/setsession")
-     */
+    #[Route("/setsession")]
     public function setsession(SessionInterface $session)
     {
         $session->set('foo', 'bar');
-
         return new Response("Session foo set");
     }
 
-    /**
-     * @Route("/getsession")
-     */
+    #[Route("/getsession")]
     public function getsession(SessionInterface $session) 
     {
         $foo = $session->get('foo', 'bar');
-
         return new Response("Session foo get: $foo");
     }
 }
