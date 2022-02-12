@@ -8,7 +8,7 @@
  * http://localhost:8000/hello                      # Hello World
  * http://localhost:8000/page                       # Page 1
  * http://localhost:8000/page/2                     # Page 2
- * http://localhost:8000/php/symfony-routing-2      # php, symfony, routing, 2
+ * http://localhost:8000/php/symfony-6              # php, symfony, 6
  * http://localhost:8000/url                        # /java/threads-1001
  */
 
@@ -37,10 +37,7 @@ class DefaultController extends AbstractController
 
     public function seo($catg, $slug, $id)
     {
-        $subcatg = explode("-", $slug)[0];
-        $title   = explode("-", $slug)[1];
-
-        return new Response("$catg, $subcatg, $title, $id");
+        return new Response("$catg, $slug, $id");
     }
 
     public function url() {
