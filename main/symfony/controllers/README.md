@@ -1,7 +1,7 @@
 # Controllers
 
 // To save time, you can install Symfony Maker.  
-// Symfony can generate a new controller class on th fly.  
+// Then Symfony can generate a new controller class.  
 
 ~~~sh
 composer create-project symfony/skeleton controllers
