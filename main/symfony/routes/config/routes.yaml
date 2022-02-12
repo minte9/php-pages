@@ -18,10 +18,14 @@ page:
     requirements: 
         id: \d+
 
-seo:
+page_slug:
     path: /{catg}/{slug}-{id}
     controller: 'App\Controller\DefaultController::seo'
     requirements:
         catg: '[a-z0-9-]+'
         slug: '[a-z0-9-]+'
         id: \d+
+
+url:
+    path: /url
+    controller: 'App\Controller\DefaultController::url'
