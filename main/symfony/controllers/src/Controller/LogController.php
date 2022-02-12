@@ -7,13 +7,7 @@
  * 
  * When you need a service in controller ...
  * type-hint an argument with its class (or interface) name.
- * 
- * To see what services you can type-hint:
- *      # php bin/console debug:autowiring
- * 
- * Install Psr Logger:
- *      # composer require logger
- * 
+
  * http://localhost:8000/log/123
  *      # var/log/dev.log
  *      # [2022-02-12] app.INFO: We are loggin id 123   
@@ -26,7 +20,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Response;
-use Psr\Log\LoggerInterface;
+use Psr\Log\LoggerInterface; # composer require logger
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
 class LogController extends AbstractController
