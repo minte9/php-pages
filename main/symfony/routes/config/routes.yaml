@@ -16,7 +16,7 @@ page:
     defaults:
         id: 1
     requirements: 
-        id: '\d+'
+        id: \d+
 
 seo:
     path: /{catg}/{slug}-{id}
@@ -24,4 +24,4 @@ seo:
     requirements:
         catg: '[a-z0-9-]+'
         slug: '[a-z0-9-]+'
-        id: '\d+'
+        id: \d+
