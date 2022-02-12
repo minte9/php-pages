@@ -3,6 +3,9 @@
 /**
  * MyController
  * 
+ * Symfony will pass the Request object to any controller argument 
+ * that is type-hinted with the Request class.
+ * 
  * http://localhost:8000/my             # Welcome to your new controller
  * http://localhost:8000/info?page=3    # Page 3 is Not Ajax
  */
@@ -26,7 +29,7 @@ class MyController extends AbstractController
     }
 
     #[Route('/info')]
-    public function info(Request $request): Response
+    public function info(Request $request): Response // Look Here
     {
         $page = $request->query->get('page');
         $ajax = $request->isXmlHttpRequest() ? 'Ajax' : 'Not Ajax';
