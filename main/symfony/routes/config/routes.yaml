@@ -10,11 +10,15 @@ index:
     path: /
     controller: 'App\Controller\DefaultController::index'
 
+hello:
+    path: /hello/{name}
+    controller: 'App\Controller\DefaultController::hello'
+    defaults:
+        name: 'World'
+
 page:
     path: /page/{id}
     controller: 'App\Controller\DefaultController::page'
-    defaults:
-        id: 1
     requirements: 
         id: \d+
 

@@ -4,7 +4,8 @@
  * 
  * src/Controller/DefaultController.php
  * 
- * http://localhost:8000/                           # Hello World
+ * http://localhost:8000/                           # Index page
+ * http://localhost:8000/hello                      # Hello World
  * http://localhost:8000/page                       # Page 1
  * http://localhost:8000/page/2                     # Page 2
  * http://localhost:8000/php/symfony-routing-2      # php, symfony, routing, 2
@@ -21,7 +22,12 @@ class DefaultController extends AbstractController
 {
     public function index()
     {
-        return new Response("Hello World");
+        return new Response("Index page");
+    }
+
+    public function hello($name)
+    {
+        return new Response("Hello $name");
     }
 
     public function page($id)
