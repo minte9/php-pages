@@ -7,8 +7,8 @@
  * Starting from Symfony 5.0 support for PHP templates was removed.
  * Only Twig templates can be used.
  * 
- * http://localhost:8000/                   # Hello World
- * http://localhost:8000/hello/Symfony      # Hello Simfony
+ * http://localhost:8000/hello              # Hello WORLD
+ * http://localhost:8000/hello/Symfony      # Hello SYMFONY
  * 
  */
 
@@ -20,19 +20,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class DefaultController extends AbstractController 
 {
     /**
-     * @Route("/")
-     */
-    public function index() 
-    {
-        return $this->render('default/index.html.twig');
-    }
-
-    /**
      * @Route("/hello/{name}")
      */
-    public function hello($name)
+    public function hello($name='World')
     {
-        return $this->render('default/hello.html.twig', [
+        return $this->render('default/index.html.twig', [
             'name' => $name,
         ]);
     }
