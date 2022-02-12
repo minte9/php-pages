@@ -14,7 +14,7 @@ page:
     path: /page/{id}
     controller: 'App\Controller\DefaultController::page'
     requirements: 
-        id: \d+
+        id: '\d+'
 
 seo:
     path: /{catg}/{slug}-{id}
