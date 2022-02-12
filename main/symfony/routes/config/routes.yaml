@@ -12,14 +12,14 @@ index:
 
 page:
     path: /page/{id}
-    controller: App\Controller\DefaultController::page
+    controller: 'App\Controller\DefaultController::page'
     requirements:
         id: \d+
 
 seo:
     path: /{catg}/{slug}-{id}
-    controller: App\Controller\DefaultController::seo
+    controller: 'App\Controller\DefaultController::seo'
     requirements:
-        catg: "[a-z0-9-]+"
-        slug: "[a-z0-9-]+"
+        catg: '[a-z0-9-]+'
+        slug: '[a-z0-9-]+'
         id: \d+
