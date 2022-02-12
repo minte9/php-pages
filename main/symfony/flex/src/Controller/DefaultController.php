@@ -1,12 +1,15 @@
 <?php
 /**
+ * DefaultController
+ * 
  * src/Controller/DefaultController
  * 
- * http://localhost:8000/hello/Symfony
- *      Hello Simfony
- * 
  * Starting from Symfony 5.0 support for PHP templates was removed.
- * You can use only Twig templates.
+ * Only Twig templates can be used.
+ * 
+ * http://localhost:8000/                   # Hello World
+ * http://localhost:8000/hello/Symfony      # Hello Simfony
+ * 
  */
 
 namespace App\Controller;
@@ -18,7 +21,6 @@ class DefaultController extends AbstractController
 {
     /**
      * @Route("/")
-     * templates/default/index.html.twig
      */
     public function index() 
     {
