@@ -4,8 +4,9 @@
  * 
  * src/Controller/DefaultController.php
  * 
- * http://localhost:8000/           # Hello World
- * http://localhost:8000/page/2     # Page 2
+ * http://localhost:8000/default/           # Index page
+ * http://localhost:8000/default/hello      # Hello world
+ * http://localhost:8000/default/page/3     # Page 3
  * 
  */
 
@@ -14,18 +15,21 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+/**
+ * @Route("/default")
+ */
 class DefaultController
 {
     /**
-     * config/routes.yaml
+     * @Route("/")
      */
     public function index()
     {
-        return new Response("Hello World");
+        return new Response("Index page");
     }
 
     /**
-     * @Route("/hello/{name}")
+     * @Route("/hello/{name}", defaults={"name"="world"})
      */
     public function hello($name)
     {
