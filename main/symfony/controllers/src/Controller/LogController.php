@@ -4,14 +4,15 @@
  * LogController
  * 
  * Symfony comes packed with a lot of usefull classes (services).
+ * 
  * When you need a service in controller ...
  * type-hint an argument with its class (or interface) name.
  * 
  * To see what services you can type-hint:
- *      php bin/console debug:autowiring
+ * php bin/console debug:autowiring
  * 
  * Install Psr Logger:
- *      composer require logger
+ * composer require logger
  * 
  * http://localhost:8000/log/123
  *      # var/log/dev.log
