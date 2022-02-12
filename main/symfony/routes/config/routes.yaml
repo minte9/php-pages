@@ -10,6 +10,16 @@ index:
     path: /
     controller: 'App\Controller\DefaultController::index'
 
-hello:
-    path: /hello/{name}
-    controller: 'App\Controller\DefaultController::hello'
+page:
+    path: /page/{id}
+    controller: App\Controller\DefaultController::page
+    requirements:
+        id: \d+
+
+seo:
+    path: /{catg}/{slug}-{id}
+    controller: App\Controller\DefaultController::seo
+    requirements:
+        catg: "[a-z0-9-]+"
+        slug: "[a-z0-9-]+"
+        id: \d+

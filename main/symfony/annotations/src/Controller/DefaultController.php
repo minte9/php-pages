@@ -7,8 +7,6 @@
  * 
  * config/routes.yaml not needed
  * 
- * Starting with PHP8 we can use attributes.
- * 
  * http://localhost:8000/hello/Symfony
  *      Hello Simfony
  */
@@ -18,10 +16,13 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+/**
+ * @Route("/")
+ */
 class DefaultController
 {
     /**
-     * @Route("/")
+     * @Route("/index")
      */
     public function index()
     {
@@ -29,16 +30,10 @@ class DefaultController
     }
 
     /** 
-     * @Route("/hello/{x}")
+     * @Route("/hello/{name}")
      */
-    public function hello($x)
+    public function hello($name)
     {
-        return new Response("Hello $x");
-    }
-
-    #[Route('/go', name: 'action')]
-    public function go()
-    {
-        return new Response("go");
+        return new Response("Hello $name");
     }
 }
