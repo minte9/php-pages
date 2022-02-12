@@ -22,4 +22,4 @@ seo:
     requirements:
         catg: '[a-z0-9-]+'
         slug: '[a-z0-9-]+'
-        id: \d+
+        id: '\d+'
