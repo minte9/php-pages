@@ -35,7 +35,7 @@ class DefaultController extends AbstractController
         return new Response("Page $id");
     }
 
-    public function seo($catg, $slug, $id)
+    public function page_slug($catg, $slug, $id)
     {
         return new Response("$catg, $slug, $id");
     }

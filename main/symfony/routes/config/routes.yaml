@@ -24,7 +24,7 @@ page:
 
 page_slug:
     path: /{catg}/{slug}-{id}
-    controller: 'App\Controller\DefaultController::seo'
+    controller: 'App\Controller\DefaultController::page_slug'
     requirements:
         catg: '[a-z0-9-]+'
         slug: '[a-z0-9-]+'
