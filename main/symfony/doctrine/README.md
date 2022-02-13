@@ -10,6 +10,5 @@ composer require symfony/orm-pack
 composer require --dev symfony/maker-bundle
 
 symfony server:start
-
 http://localhost:8000   # Welcome to Symfony
 ~~~
