@@ -19,17 +19,10 @@ composer require profiler
 composer require api
 ~~~
 
-## Remove
-
-~~~sh
 # Remove a recipe with composer remove
 
 composer remove vendor/package
-~~~
 
-## Serve
-
-~~~sh
 symfony server:start
 http://localhost:8000       
     # Welcome to Symfony
