@@ -13,6 +13,7 @@ cd flex/
 composer require twig
 composer require profiler
 composer require api
+    # composer remove vendor/package
 
 symfony server:start
 
