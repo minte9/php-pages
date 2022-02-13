@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Conditional assigment
+ * Conditional assigment operators
  * 
  * Ternary operator: 
  *      is a shorthand for the if ... else statement. 
