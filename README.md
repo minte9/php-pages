@@ -28,4 +28,4 @@ composer update
   * annotations/ [project/](./main/symfony/annotations), [DefaultController](./main/symfony/annotations/src/Controller/DefaultController.php)
   * flex/ [project/](./main/symfony/flex), [DefaultController](./main/symfony/flex/src/Controller/DefaultController.php), [index.html.twig](./main/symfony/flex/templates/default/index.html.twig)
   * controllers/ [project/](./main/symfony/controllers), [MyController](./main/symfony/controllers/src/Controller/MyController.php), [LogController](./main/symfony/controllers/src/Controller/LogController.php)
-  * doctrine/ [project/](./main/symfony/doctrine), [ProductController](./main/symfony/controllers/src/Controller/ProductController.php), [ProductRepository](./main/symfony/controllers/src/Repository/ProductRepository.php)
+  * doctrine/ [project/](./main/symfony/doctrine), [ProductController](./main/symfony/doctrine/src/Controller/ProductController.php), [ProductRepository](./main/symfony/doctrine/src/Repository/ProductRepository.php)
