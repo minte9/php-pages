@@ -7,7 +7,6 @@
  * 
  * Can't be changed once set.
  * Can be accessed for any scope within a script.
- * Constants may only evaluate to scalar values or arrays.
  */
 
 error_reporting(E_ALL);
