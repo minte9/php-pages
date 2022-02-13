@@ -3,6 +3,8 @@
 /**
  * ProductController
  * 
+ * src/Controller/ProductController.php
+ * 
  * Save products in DB.
  * 
  * Whether you're creating or updating objects ...
