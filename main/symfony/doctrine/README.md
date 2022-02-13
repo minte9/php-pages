@@ -42,7 +42,7 @@ php bin/console doctrine:migrations:migrate
 
 ~~~sh
 php bin/console make:entity
-    # add descrition to product table
+    # add descrition property to product entity
 
 php bin/console make:migration
 php bin/console doctrine:migrations:migrate
