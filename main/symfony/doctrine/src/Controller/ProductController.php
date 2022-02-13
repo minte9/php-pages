@@ -5,7 +5,8 @@
  * 
  * Save products in DB.
  * The Validator reuses Doctrine metadata to perform some validation.
- *      # composer require symfony/validator
+ * 
+ *      composer require symfony/validator
  * 
  * http://localhost:8000/product        # New product saved, id: 1
  * http://localhost:8000/product        # New product saved, id: 2
