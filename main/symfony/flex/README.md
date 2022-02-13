@@ -22,6 +22,5 @@ composer remove api
 composer remove vendor/package
 
 symfony server:start
-http://localhost:8000       
-    # Welcome to Symfony
+http://localhost:8000   # Welcome to Symfony
 ~~~
