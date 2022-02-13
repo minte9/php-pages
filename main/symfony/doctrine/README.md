@@ -47,3 +47,10 @@ php bin/console make:entity
 php bin/console make:migration
 php bin/console doctrine:migrations:migrate
 ~~~
+
+## Controller
+
+~~~sh
+php bin/console make:controller ProductController
+    # src/Controller/ProductController.php
+~~~
