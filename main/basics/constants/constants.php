@@ -1,7 +1,5 @@
 <?php
 /**
- * Contanstans
- * 
  * Constants can be defined using the const keyword ...
  * or by using the define()
  * 
