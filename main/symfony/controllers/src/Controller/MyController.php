@@ -29,7 +29,7 @@ class MyController extends AbstractController
     }
 
     #[Route('/info')]
-    public function info(Request $request): Response // Look Here
+    public function info(Request $request): Response
     {
         $page = $request->query->get('page');
         $ajax = $request->isXmlHttpRequest() ? 'Ajax' : 'Not Ajax';
