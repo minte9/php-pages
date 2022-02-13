@@ -31,8 +31,8 @@ class ProductRepository extends ServiceEntityRepository
             ORDER BY p.id DESC
         ";
         $stmt = $conn->prepare($sql);
-        $rs = $stmt->executeQuery(['id' => $id]);
+        $result = $stmt->executeQuery(['id' => $id]);
 
-        return $rs->fetchAllAssociative();
+        return $result->fetchAllAssociative();
     }
 }
