@@ -4,6 +4,11 @@
  * ProductRepository
  * 
  * src/Repository/ProductRepository.php
+ * 
+ * You can think of a repository as a PHP class whose only job ...
+ * is to help you fetch entities of a certain class.
+ * 
+ * Once you have a repository object, you have many helper methods.
  */
 
 namespace App\Repository;
