@@ -36,11 +36,7 @@ php bin/console make:migration
 php bin/console doctrine:migrations:migrate
     # Migrating up to DoctrineMigrations\Version20220213125613
     # Table product created
-~~~
 
-## Migrations
-
-~~~sh
 php bin/console make:entity
     # add descrition property to product entity
 
