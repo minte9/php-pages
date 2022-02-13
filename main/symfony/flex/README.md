@@ -12,15 +12,13 @@ cd flex/
 # Flex resolves that alias for Composer.  
 
 # Flex installs a recipe for symfony/twig-bundle.  
-#A recipe is a way for a library to automatically configure itself.  
+# A recipe is a way for a library to automatically configure itself.  
 
 composer require twig
 composer require profiler
 composer require api
-~~~
 
-# Remove a recipe with composer remove
-
+composer remove api
 composer remove vendor/package
 
 symfony server:start
