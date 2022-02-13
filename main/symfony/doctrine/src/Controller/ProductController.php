@@ -3,6 +3,7 @@
 /**
  * ProductController
  * 
+ * php bin/console make:controller ProductController
  * src/Controller/ProductController.php
  * 
  * Save products in DB.
