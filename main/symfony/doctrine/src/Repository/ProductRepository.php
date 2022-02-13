@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * ProductRepository
+ * 
+ * src/Repository/ProductRepository.php
+ */
+
 namespace App\Repository;
 
 use App\Entity\Product;
@@ -19,32 +25,17 @@ class ProductRepository extends ServiceEntityRepository
         parent::__construct($registry, Product::class);
     }
 
-    // /**
-    //  * @return Product[] Returns an array of Product objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    public function findAllGreaterThanId(int $id): array
     {
-        return $this->createQueryBuilder('p')
-            ->andWhere('p.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('p.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-    */
+        $conn = $this->getEntityManager()->getConnection();
+        $sql = "
+            SELECT * FROM product p 
+            WHERE p.id > :id
+            ORDER BY p.id DESC
+        ";
+        $stmt = $conn->prepare($sql);
+        $rs = $stmt->executeQuery(['id' => $id]);
 
-    /*
-    public function findOneBySomeField($value): ?Product
-    {
-        return $this->createQueryBuilder('p')
-            ->andWhere('p.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
+        return $rs->fetchAllAssociative();
     }
-    */
 }
