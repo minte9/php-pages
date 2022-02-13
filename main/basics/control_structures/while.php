@@ -1,8 +1,8 @@
 <?php
 
 /**
- * With do/while the contents of the loop will be executed at least once.
- * Even if the condition never evaluates to true. 
+ * Even if the condition never evaluates to true ...
+ * the content of the do / while is executed at least once.
  */
 
 $i = 0;
