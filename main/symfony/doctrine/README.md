@@ -11,10 +11,11 @@ composer require --dev symfony/maker-bundle
 
 symfony server:start
 http://localhost:8000   # Welcome to Symfony
-
+~~~
 
 # Database
 
+~~~sh
 # .env
 DATABASE_URL="mysql://admin:password@127.0.0.1:3306/db_name?serverVersion=8.0.27"
 
