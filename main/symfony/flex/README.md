@@ -1,4 +1,4 @@
-# Flex Project
+# Project
 
 ~~~sh
 composer create-project symfony/skeleton flex
