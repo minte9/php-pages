@@ -9,9 +9,7 @@ cd doctrine/
 composer require symfony/orm-pack
 composer require --dev symfony/maker-bundle
 
-# Start server
-
 symfony server:start
-http://localhost:8000	
-    # Welcome to Symfony
+
+http://localhost:8000   # Welcome to Symfony
 ~~~
