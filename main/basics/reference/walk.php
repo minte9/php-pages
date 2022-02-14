@@ -4,18 +4,18 @@
  * Array walk with / without reference
  */
 
-$A = [1.5, 2.6, 3.7];
-array_walk($A, fn($v) => $v = floor($v));
-print_r($A); 
+$arr = [1.5, 2.6, 3.7];
+array_walk($arr, fn($v) => $v = floor($v));
+print_r($arr); 
     // 1.5, 2.6, 3.7
     
-$A = [1.5, 2.6, 3.7];
-array_walk($A, fn(&$v) => $v = floor($v));
-print_r($A); 
+$arr = [1.5, 2.6, 3.7];
+array_walk($arr, fn(&$v) => $v = floor($v));
+print_r($arr); 
     // 1, 2, 3
 
 // map
-$A = [1.5, 2.6, 3.7];
-$A = array_map('floor', $A);
-print_r($A); 
+$arr = [1.5, 2.6, 3.7];
+$arr = array_map('floor', $arr);
+print_r($arr); 
     // 1, 2, 3
