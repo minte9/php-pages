@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Variable are passed by value (not by reference).
  */

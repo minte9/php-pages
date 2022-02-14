@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Array walk with / without reference
  */
