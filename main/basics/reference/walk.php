@@ -1,18 +1,21 @@
 <?php
 
-$a = [1.5, 2.6, 3.7];
-$a = array_map('floor', $a);
-print_r($a); 
-    // 1, 2, 3
+/**
+ * Array walk with / without reference
+ */
 
-$b = [1.5, 2.6, 3.7];
-array_walk($b, function(&$v) { 
-    $v = floor($v);
-});
-print_r($b); 
-    // 1, 2, 3
-
-$c = [1.5, 2.6, 3.7];
-array_walk($c, fn($v) => $v = floor($v));
-print_r($c); 
+$A = [1.5, 2.6, 3.7];
+array_walk($A, fn($v) => $v = floor($v));
+print_r($A); 
     // 1.5, 2.6, 3.7
+    
+$A = [1.5, 2.6, 3.7];
+array_walk($A, fn(&$v) => $v = floor($v));
+print_r($A); 
+    // 1, 2, 3
+
+// map
+$A = [1.5, 2.6, 3.7];
+$A = array_map('floor', $A);
+print_r($A); 
+    // 1, 2, 3
