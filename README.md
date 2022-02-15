@@ -25,11 +25,11 @@ composer update
 - [Symfony](#symfony) 
 
 ## Basics
-  * quotes/ [quotes.php](./main/basics/quotes/quotes.php), [herodoc.php](./main/basics/quotes/herodoc.php)
-  * constants/ [constants.php](./main/basics/constants/constants.php), [class.php](./main/basics/constants/class.php)
-  * control_structures/ [while.php](./main/basics/control_structures/while.php),[break.php](./main/basics/control_structures/break.php), [switch.php](./main/basics/control_structures/switch.php), [conditional.php](./main/basics/control_structures/conditional.php)
-  * reference/ [reference.php](./main/basics/reference/reference.php), [array.php](./main/basics/reference/array.php), [walk.php](./main/basics/reference/walk.php)
-  * integers/ [decimal.php](./main/basics/integers/decimal.php), [hexadecimal.php](./main/basics/integers/hexadecimal.php), [binary.php](./main/basics/integers/binary.php), [float.php](./main/basics/integers/float.php)
+  * quotes/ [quotes](./main/basics/quotes/quotes.php), [herodoc](./main/basics/quotes/herodoc.php)
+  * constants/ [constants](./main/basics/constants/constants.php), [class](./main/basics/constants/class.php)
+  * control_structures/ [while](./main/basics/control_structures/while.php),[break](./main/basics/control_structures/break.php), [switch](./main/basics/control_structures/switch.php), [conditional](./main/basics/control_structures/conditional.php)
+  * reference/ [reference](./main/basics/reference/reference.php), [array](./main/basics/reference/array.php), [walk](./main/basics/reference/walk.php)
+  * integers/ [decimal](./main/basics/integers/decimal.php), [hexadecimal](./main/basics/integers/hexadecimal.php), [binary](./main/basics/integers/binary.php), [float](./main/basics/integers/float.php)
 
 ## Symfony
   * routes/ [project/](./main/symfony/routes), [routes](./main/symfony/routes/config/routes.yaml), [DefaultController](./main/symfony/routes/src/Controller/DefaultController.php)
