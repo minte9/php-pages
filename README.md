@@ -7,12 +7,13 @@ Learn and Remember - [minte9.com/php](https://www.minte9.com/php)
 ## Install
 
 ~~~sh
+# Install repo
 git clone https://github.com/minte9/php-pages.git
 
-# Updates
+# Update repo
 git pull origin main
 
-# Dependencies
+# Update dependencies
 cd main/symfony/annotations/
 composer update
 ~~~
