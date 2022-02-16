@@ -40,4 +40,4 @@ composer update
 
 ##
 
-More on [minte9.com/java](https://www.minte9.com/php)
+More on [minte9.com/php](https://www.minte9.com/php)
