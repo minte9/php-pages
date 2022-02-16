@@ -8,13 +8,11 @@ Learn and Remember - [minte9.com/php](https://www.minte9.com/php)
 
 ~~~sh
 git clone https://github.com/minte9/php-pages.git
-~~~
 
-## Updates
-
-~~~sh
+# Updates
 git pull origin main
 
+# Dependencies
 cd main/symfony/annotations/
 composer update
 ~~~
