@@ -1,6 +1,8 @@
 <?php
 /**
- * Variables are one of only two identifier types in PHP that are case-sensitive.
+ * In PHP Variables are one of only two identifier types ...
+ * that are case-sensitive.
+ * 
  * The other are constants.
  */
 
