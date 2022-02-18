@@ -1,8 +1,5 @@
 <?php
-
 /**
- * Variable name:
- * 
  * Variables must be named using only letters, numbers and underscore.
  *      $name/ - invalid name
  * 
