@@ -23,7 +23,7 @@ Learn and Remember - [minte9.com/php](https://www.minte9.com/php)
   * controllers/ [project/](./main/symfony/controllers), [MyController](./main/symfony/controllers/src/Controller/MyController.php), [LogController](./main/symfony/controllers/src/Controller/LogController.php)
   * doctrine/ [project/](./main/symfony/doctrine), [ProductController](./main/symfony/doctrine/src/Controller/ProductController.php), [ProductRepository](./main/symfony/doctrine/src/Repository/ProductRepository.php)
 
-## Install
+## Repo
 
 ~~~sh
 # Install repo
