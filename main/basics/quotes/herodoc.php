@@ -4,7 +4,7 @@
  * Herodoc strings
  * 
  * It is used for formating on multiple lines. 
- * You can use of quotes without escaping.
+ * You can use quotes without escaping.
  * 
  * The closing identifier must contain no characters, except a semicolon (;)
  * The first character after the closing identifier must be a newline. 
