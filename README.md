@@ -4,20 +4,6 @@ Learn and Remember - [minte9.com/php](https://www.minte9.com/php)
 
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/minte9/php-pages)
 
-## Install
-
-~~~sh
-# Install repo
-git clone https://github.com/minte9/php-pages.git
-
-# Update repo
-git pull origin main
-
-# Update dependencies
-cd main/symfony/annotations/
-composer update
-~~~
-
 ## Pages
 
 - [Basics](#basics)
@@ -37,6 +23,19 @@ composer update
   * controllers/ [project/](./main/symfony/controllers), [MyController](./main/symfony/controllers/src/Controller/MyController.php), [LogController](./main/symfony/controllers/src/Controller/LogController.php)
   * doctrine/ [project/](./main/symfony/doctrine), [ProductController](./main/symfony/doctrine/src/Controller/ProductController.php), [ProductRepository](./main/symfony/doctrine/src/Repository/ProductRepository.php)
 
+## Install
+
+~~~sh
+# Install repo
+git clone https://github.com/minte9/php-pages.git
+
+# Update repo
+git pull origin main
+
+# Update dependencies
+cd main/symfony/annotations/
+composer update
+~~~
 
 ##
 
