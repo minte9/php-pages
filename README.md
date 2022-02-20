@@ -29,12 +29,12 @@ Learn and Remember - [minte9.com/php](https://www.minte9.com/php)
 # Install repo
 git clone https://github.com/minte9/php-pages.git
 
-# Update repo
-git pull origin main
-
 # Update dependencies
 cd main/symfony/annotations/
 composer update
+
+# Update repo
+git pull origin main
 ~~~
 
 ##
