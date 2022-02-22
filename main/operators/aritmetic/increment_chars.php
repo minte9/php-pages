@@ -6,6 +6,5 @@
 
 $i = 'W';
 for ($n=0; $n<6; $n++) {
-    echo ++$i . " ";
+    echo ++$i . " "; // X Y Z AA AB AC 
 }
-// X Y Z AA AB AC 
