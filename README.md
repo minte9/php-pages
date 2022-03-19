@@ -9,7 +9,7 @@ Learn and Remember - [minte9.com/php](https://www.minte9.com/php)
 - [Operators](./main/operators)
 - [Symfony](./main/symfony) 
 
-## Repo
+##
 
 ~~~sh
 # Install
