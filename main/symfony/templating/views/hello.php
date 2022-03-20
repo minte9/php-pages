@@ -1,3 +1,3 @@
-<!-- // views/hello.php -->
+<?php // views/hello.php ?>
 
 Hello, <?= $view->escape($firstname) ?>
