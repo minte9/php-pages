@@ -7,6 +7,8 @@ Learn and Remember - [minte9.com/php](https://www.minte9.com/php)
 - [Basics](./main/basics)
 - [Variables](./main/variables)
 - [Operators](./main/operators)
+- [Framework](./main/framework)
+- [Composer](./main/composer)
 - [Symfony](./main/symfony) 
 
 ##
