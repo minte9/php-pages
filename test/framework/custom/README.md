@@ -3,7 +3,7 @@
 ~~~sh
 cd ../test/framework/custom/
 
-composer require --dev phpunit/phpunit
+composer update
 
 vendor/bin/phpunit test.php
  ~~~
