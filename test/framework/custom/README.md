@@ -3,7 +3,7 @@
 ~~~sh
 cd ../test/framework/custom/
 
-composer update
+composer install
 
 vendor/bin/phpunit test.php
  ~~~
