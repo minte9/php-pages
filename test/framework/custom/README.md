@@ -1,4 +1,4 @@
-## Install Dependency
+## Dependency
 
 ~~~sh
 cd ../test/framework/custom/
