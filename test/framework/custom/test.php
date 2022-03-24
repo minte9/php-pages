@@ -6,8 +6,7 @@
  * cd ../test/framework/custom/
  * composer require --dev phpunit/phpunit
  * vendor/bin/phpunit test.php
- * 
- * OK (1 test, 1 assertion)
+ *      OK (1 test, 1 assertion)
  * 
  */
 
