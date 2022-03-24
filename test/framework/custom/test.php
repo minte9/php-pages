@@ -3,7 +3,7 @@
 /**
  * test.php - unit tests
  * 
- * cd framework/custom/
+ * cd ../test/framework/custom/
  * composer require --dev phpunit/phpunit
  * vendor/bin/phpunit test.php
  * 
@@ -22,7 +22,7 @@ final class Test extends TestCase
         $_GET['name'] = "Fabian";
 
         ob_start(); // not naturaly and ugly
-        include "index.php";
+        include "hello.php";
         $content = ob_get_clean();
 
         $this->assertEquals("Hello Fabian", $content);
