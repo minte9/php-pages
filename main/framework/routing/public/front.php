@@ -2,6 +2,8 @@
 /**
  * Front Controller - public/front.php
  * 
+ * ----------------------------------------------------------
+ * 
  * Following the MVC pattern is not the right goal.
  * The main goal should be Separartions of Concerns SoC.
  * 
@@ -18,6 +20,7 @@
  * but it is used in real-world applications
  * to enforce method requirements and more.
  * 
+ * ----------------------------------------------------------
  * 
  * composer require symfony/http-foundation
  * composer require symfony/routing
