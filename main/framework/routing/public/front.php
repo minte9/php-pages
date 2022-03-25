@@ -4,15 +4,13 @@
  * 
  * Following the MVC pattern is not the right goal.
  * The main goal should be Separartions of Concerns SoC.
- * Route configuration moved to its own file (app.php)
  * 
+ * Route configuration moved to its own file (app.php)
  * Routes names are used for template names.
- * 500 errors are managed correctly.
  * 
  * Based on $routes information (RouteCollection instance),
  * a UrlMatcher instance can match URL paths.
  * 
- * The match() method takes a request path and returns an array of attributes.
  * The matched route is automaticaly stored in _route attribute.
  * Attributes are extracted to keep template simple.
  * 
