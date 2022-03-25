@@ -3,10 +3,8 @@
  * Fix XSS - index3.php
  * 
  * php -S localhost:8000
- * 
  * http://localhost:8000/index2.php?name=<script>alert('Hack!');</script>
  *      XSS vulernambility
- * 
  * http://localhost:8000/index3.php?name=<script>alert('Hack!');</script>
  *      Hello <script>alert('Hack!');</script>
  */

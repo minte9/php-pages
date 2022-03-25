@@ -3,7 +3,6 @@
  * Fix Warning - index2.php
  * 
  * php -S localhost:8000
- * 
  * http://localhost/index.php 
  *      Warning: Undefined array key "name"
  * 

@@ -3,7 +3,6 @@
  * HTTP Framework (Request/Response) - index.php
  * 
  * php -S localhost:8000
- * 
  * http://localhost/index.php?name=John
  *    Hello John
  */
