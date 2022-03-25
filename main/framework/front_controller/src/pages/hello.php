@@ -1,4 +1,4 @@
-<?php
+<?php // src/pages/hello.php
 
 $name = $request->get('name', 'World');
 $response->setContent(sprintf('Hello %s',
