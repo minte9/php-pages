@@ -1,7 +1,7 @@
 <?php
 
 /**
- * index3.php - Response simulation
+ * Response simulation - index3.php
  * 
  * php -S localhost:8000
  * http://localhost:8000/index3.php

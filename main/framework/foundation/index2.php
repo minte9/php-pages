@@ -1,7 +1,7 @@
 <?php
 
 /**
- * index2.php - Request information
+ * Request information - index2.php
  * 
  * php -S localhost:8000
  * http://localhost:8000/index2.php?name=Fabien
