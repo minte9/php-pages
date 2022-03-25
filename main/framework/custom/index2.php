@@ -16,4 +16,5 @@
 ini_set("display_errors", 1);
 
 $name = $_GET['name'] ?? "Wolrd"; // Fix Warning
+
 printf("Hello %s", $name);
