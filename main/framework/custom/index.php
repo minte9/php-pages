@@ -2,6 +2,8 @@
 /** 
  * index.php - HTTP Framework
  * 
+ * We will create a HTTP Request / Response framework.
+ * 
  * Following the MVC pattern is not the right goal
  * The main goal should be Separartions of Concerns
  * 
