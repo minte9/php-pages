@@ -1,6 +1,6 @@
 <?php 
 /**
- * Routes - src/app.php
+ * App Configuration - src/app.php
  */
 
 use Symfony\Component\Routing\Route;
