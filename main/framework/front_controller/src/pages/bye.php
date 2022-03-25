@@ -1,3 +1,3 @@
-<!-- // bye.php -->
+<?php
 
 $response->setContent("Goodbye!");
