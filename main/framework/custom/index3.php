@@ -1,6 +1,6 @@
 <?php
 /**
- * index3.php - Fix XSS
+ * Fix XSS - index3.php
  * 
  * php -S localhost:8000
  * 

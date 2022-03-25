@@ -1,8 +1,6 @@
 <?php
 /** 
- * HTTP Framework - index.php
- * 
- * We will create a HTTP Request / Response framework.
+ * HTTP Framework (Request/Response) - index.php
  * 
  * php -S localhost:8000
  * http://localhost/index.php?name=John
