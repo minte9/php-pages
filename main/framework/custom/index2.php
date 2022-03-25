@@ -1,6 +1,6 @@
 <?php
 /**
- * index2.php - Fix Warning
+ * Fix Warning - index2.php
  * 
  * php -S localhost:8000
  * 

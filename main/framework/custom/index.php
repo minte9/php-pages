@@ -1,6 +1,6 @@
 <?php
 /** 
- * index.php - HTTP Framework
+ * HTTP Framework - index.php
  * 
  * We will create a HTTP Request / Response framework.
  * 
