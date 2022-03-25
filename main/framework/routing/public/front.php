@@ -2,8 +2,6 @@
 /**
  * Front Controller - public/front.php
  * 
- * ----------------------------------------------------------
- * 
  * Following the MVC pattern is not the right goal.
  * The main goal should be Separartions of Concerns SoC.
  * 
