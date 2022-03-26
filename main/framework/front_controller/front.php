@@ -29,8 +29,8 @@ $request = Request::createFromGlobals();
 $response = new Response();
 
 $map = [
-    '/hello' => __DIR__ . '/src/pages/hello.php',
-    '/bye' => __DIR__ . '/src/pages/bye.php',
+    '/hello' => __DIR__ . '/src/pages/hello.phtml',
+    '/bye' => __DIR__ . '/src/pages/bye.phtml',
 ];
 
 $path = $request->getPathInfo();
@@ -39,7 +39,9 @@ if (! isset($map[$path])) {
     $response->setStatusCode(404);
     $response->setContent("Page not found");
 } else {
+    ob_start();
     require($map[$path]);
+    $response->setContent(ob_get_clean()); // Look here
 }
 
 $response->send();
