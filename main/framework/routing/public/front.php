@@ -44,7 +44,6 @@ $routes = include __DIR__.'/../src/app.php';
 
 $context = new RequestContext();
 $context->fromRequest($request);
-
 $matcher = new UrlMatcher($routes, $context);
 
 try {
