@@ -2,9 +2,7 @@
 /**
  * Front Controller - public/front.php
  * 
- * We can replace call_user_func argument with any valid callback ...
- * (function, anonymous function, or class method, etc).
- * 
+ * We can replace call_user_func argument with any valid callback. 
  * As a convention, for each route, the associated controller ...
  * is $_controller route attribute.
  * 
