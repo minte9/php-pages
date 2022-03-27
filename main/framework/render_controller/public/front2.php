@@ -5,9 +5,9 @@
  * php -S localhost:8000 public/front2.php
  * 
  * http://localhost:8000/isEven/24
- *      Yes, the number is Even
+ *     The number is Even
  * http://localhost:8000/isEven/123
- *      No, the number is Odd
+ *      The number is Odd
  *
  */
 
