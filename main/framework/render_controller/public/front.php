@@ -14,7 +14,7 @@
  * php -S localhost:8000 public/front.php
  * 
  * http://localhost:8000/hello/Fabien
- *      Hello FABIEN
+ *      Hello Fabien
  */
 
 require_once __DIR__.'/../vendor/autoload.php';
