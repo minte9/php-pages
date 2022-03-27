@@ -10,6 +10,8 @@ use Symfony\Component\Routing\Route;
 use Symfony\Component\Routing\RouteCollection;
 
 $routes = new RouteCollection();
+
+$routes->add('bye', new Route('bye'));
 $routes->add('hello', new Route('/hello/{name}', [
     'name' => 'World',
     '_controller' => function($request) { // Render Controller
@@ -27,7 +29,6 @@ $routes->add('hello', new Route('/hello/{name}', [
         return $response;
     }
 ]));
-$routes->add('bye', new Route('bye'));
 
 function render_template($request)
 {

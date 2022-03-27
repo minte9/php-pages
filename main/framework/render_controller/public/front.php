@@ -1,6 +1,6 @@
 <?php
 /**
- * public/front.php
+ * Front Controller - public/front.php
  * 
  * We can replace call_user_func argument with any valid callback ...
  * (function, anonymous function, or class method, etc).
