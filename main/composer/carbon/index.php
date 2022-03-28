@@ -1,10 +1,4 @@
-<?php
-
-/**
- * index.php
- * 
- * composer require nesbot/carbon
- */
+<?php // omposer require nesbot/carbon
 
 require __DIR__ . '/vendor/autoload.php';
 
