@@ -1,6 +1,6 @@
 <?php
 /**
- * Front Controller - public/front.php
+ * public/front.php
  * 
  * In computer science, Separation Of Concerns is a design principle 
  * for separting a computer program in different sections. 

@@ -1,4 +1,4 @@
-<?php // NumberChecker\Model\NumberModel.php
+<?php // src/NumberChecker/Model/NumberModel.php
 
 namespace NumberChecker\Model;
 
