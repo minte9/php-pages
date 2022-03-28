@@ -1,7 +1,8 @@
 <?php
 
 /** 
- * Guzzle is a HTTP client library for PHP, initially a wrapper library around cURL.
+ * Guzzle is a HTTP client library for PHP, 
+ * initially a wrapper library around cURL.
  * It evolved to a transport agnostic PSR-7 compatible library.
 
  * composer require guzzlehttp/guzzle
