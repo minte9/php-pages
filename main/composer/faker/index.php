@@ -1,4 +1,14 @@
-<?php // composer require fzaninotto/faker
+<?php
+
+/**
+ * Even if this example shows a property access, 
+ * each call to $faker->name yields a different (random) result. 
+ * 
+ * This is because Faker uses __get() magic, and forwards 
+ * Faker\Generator->$property calls to Faker\Generator->format($property).
+ * 
+ * composer require fzaninotto/faker
+ */
 
 require __DIR__ . '/vendor/autoload.php';
 
