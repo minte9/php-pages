@@ -36,6 +36,7 @@ Class Framework
                 ->getArguments($request, $controller);
 
             return call_user_func_array($controller, $arguments);
+            
         } catch(ResourceNotFoundException $e) {
             return new Response('Not found', 404);
         } catch (\Exception $e) {

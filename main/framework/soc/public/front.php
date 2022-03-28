@@ -2,21 +2,36 @@
 /**
  * Front Controller - public/front.php
  * 
- * The render controller is always instantiated, 
- * even if URL doesn't match the route.
+ * In computer science, Separation Of Concerns is a design principle 
+ * for separting a computer program in different sections. 
+ * Each section addresses a separate concern.
+ * This is called a modular program, easy to reused and replaced.
  * 
- * It will be bettter if the controllers are lazy-loaded.
- * We will use HttpKernel for that.
+ * Our application will have four different layers.
  * 
- * Argument resolver getArguments() inspects the controller signature.
- * It determines which arguments to pass using PHP reflexion.
+ *      /public/front.php
+ *      /src/Simplex
+ *      /src/NumberChecker
+ *      /src/app.php
+ * 
+ * The front controller is the only php code exposed to the client.
+ * It gets the Request and sends the Response.
+ * It provides a place to initialize the framework of the app.
  * 
  * ------------------------------------------------------------
  * 
- * composer require symfony/http-foundation
- * composer require symfony/routing
- * composer require symfony/http-kernel
- * 
+ * composer.json
+ * {
+ *      "require": {
+ *          "symfony/routing": "^6.0",
+ *          "symfony/http-foundation": "^6.0",
+ *          "symfony/http-kernel": "^6.0"
+ *      },
+ *      "autoload": {
+ *          "psr-4": {"": "src/"}
+ *      }
+ * }
+ * composer dump-autoload
  * php -S localhost:8000 public/front.php
  * 
  * http://localhost:8000/isEven/24
@@ -34,7 +49,7 @@ use Symfony\Component\HttpKernel\Controller\ControllerResolver;
 use Symfony\Component\HttpKernel\Controller\ArgumentResolver;
 
 $request = Request::createFromGlobals();
-$routes = include __DIR__.'/../src/app.php';
+$routes = include __DIR__.'/../src/app.php'; // App configuration
 
 $context = new RequestContext();
 $context->fromRequest($request);
@@ -43,7 +58,7 @@ $matcher = new UrlMatcher($routes, $context);
 $controllerResolver = new ControllerResolver();
 $argumentResolver = new ArgumentResolver();
 
-$framework = new Simplex\Framework(
+$framework = new Simplex\Framework( // Simplex framework
     $matcher, $controllerResolver, $argumentResolver
 );
 

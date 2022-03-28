@@ -12,8 +12,8 @@ class CheckNumberController
     {
         $model = new NumberModel();
         if ($model->isEven($no)) {
-            return new Response("Yes, the number is even!");
+            return new Response("The number is even");
         }
-        return new Response("No, the number is odd of null.");
+        return new Response("The number is odd of null");
     }
 }
