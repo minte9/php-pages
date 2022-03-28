@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 use Symfony\Component\HttpKernel\Controller\ControllerResolver;
 use Symfony\Component\HttpKernel\Controller\ArgumentResolver;
 
-Class Framework
+class Framework
 {
     private $matcher;
     private $controllerResolver;
