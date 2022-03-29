@@ -7,7 +7,6 @@ require_once __DIR__ . '/vendor/autoload.php';
 use MathPHP\Algebra;
 use MathPHP\Arithmetic;
 use MathPHP\Functions\Map;
-use MathPHP\LinearAlgebra\Matrix;
 use MathPHP\LinearAlgebra\MatrixFactory;
 
 // Greatest common divisor (GCD)
