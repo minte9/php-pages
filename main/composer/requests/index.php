@@ -1,5 +1,13 @@
 <?php
 /**
+ * Requests library
+ * 
+ * It is roughly based on the API from the excellent ...
+ * Requests Python library.
+ * 
+ * Other HTTP libraries optimize for the library developer’s time.
+ * Requests optimizes for your time.
+ * 
  * composer require rmccue/requests
  */
 
