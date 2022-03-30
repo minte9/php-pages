@@ -1,4 +1,10 @@
-<?php
+<?php 
+
+/**
+ * Bitwise AND
+ * 
+ * Bits set in both $a and $b
+ */
 
 $a = 9; // 8 + 1; 00001001
 $b = 10; // 8 + 2; 00001010
