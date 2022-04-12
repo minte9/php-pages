@@ -10,7 +10,7 @@
  *      getBirthDate(): \DateTime 
  * 
  * To mark a property can be null, prefix its type with a question mark.
- * Even if a property is marked nullable, its uninitialized value will not be null.
+ * Even if a property is nullable, its uninitialized value will not be null.
  * (unititalized state)
  */
 
