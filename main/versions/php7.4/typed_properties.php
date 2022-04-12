@@ -32,7 +32,7 @@ class A
 }
 
 $a = new A();
-$a->name = null; // can be null
+$a->name = null; // set as null
 $a->setBirthDay(new DateTime('2011-12-01'));
 echo $a->getBirthDay(); // 01-12-2011
 
