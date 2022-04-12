@@ -37,9 +37,9 @@ class B
 }
 
 try {
-    new B('POST'); // This is POST'
-    new B('GET'); // This is GET'
-    new B('HEAD'); // This is GET'
+    new B('POST');  // This is POST
+    new B('GET');   // This is GET
+    new B('HEAD');  // This is GET
     new B('HTTP');
 } catch(Exception $e) {
     echo $e->getMessage(); // Unsupported
