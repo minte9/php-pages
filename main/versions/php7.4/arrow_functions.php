@@ -11,7 +11,7 @@ $posts = [
 ];
 
 // PHP 7.4+
-$ids = array_map(fn($post) => $post->id, $posts);
+$ids = array_map(fn($post) => $post->id, $posts); // Look Here
 print_r($ids); // [1, 2]
 
 // PHP < 7.4 

@@ -20,7 +20,7 @@ class A
         self::$i +=  $n;
     }
 
-    public function get(): int|float
+    public function get(): int|float  // Look Here
     {
         return self::$i;
     }

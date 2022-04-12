@@ -16,7 +16,7 @@ class B
 
     public function __construct(String $request_method) 
     {
-        $result = match($request_method) {
+        $result = match($request_method) { // Look Here
             'POST' => $this->handle_post(),
             'GET', 'HEAD' => $this->handle_get(),
             default => throw new \Exception('Unsupported'),
