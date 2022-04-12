@@ -13,14 +13,14 @@
 
 class A 
 {
-    private static int|float $i = 10;
+    private static int|float $i = 10; // Look Here
 
     public function add(float|int $n, ?string $name)
     {
         self::$i +=  $n;
     }
 
-    public function get(): int|float  // Look Here
+    public function get(): int|float
     {
         return self::$i;
     }
