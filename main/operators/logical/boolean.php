@@ -2,13 +2,12 @@
 
 /**
  * AND
- * 
- * Evaluates to true if both the left and right operands evaluate to true
+ * Evaluates to true if both ...
+ * the left and right operands evaluate to true
  */
 
 echo ( isset($a) && isset($b) ) ? " / both set" : "false";
     // false
-
 $a = 1;
 $b = 2;
 echo ( isset($a) && isset($b) ) ? " / both set" : "false";
@@ -17,8 +16,8 @@ echo ( isset($a) && isset($b) ) ? " / both set" : "false";
 
 /**
  * OR
- * 
- * Evaluates to true if either the left or right operands evaluate to true.
+ * Evaluates to true if either ...
+ * the left or right operands evaluate to true.
  */
 
 $c = 3;
@@ -28,15 +27,13 @@ echo ( isset($c) OR isset($d) ) ? " / at least one" : "false";
 
 /**
  * XOR
- * 
- * Evaluates to true if ...
- * either the left and right operands evaluates to true, ...
- * but not both.
+ * Evaluates to true if either ...
+ * the left and right operands evaluates to true ...
+ * but not both
  */
 
 $a = "1";
 $b = "abc";
-
 echo ( is_numeric($a) XOR is_numeric($b) ) ? " / only one number" : "false";
     // only one number
 
