@@ -2,8 +2,8 @@
 
 $a = 10;
 
-echo $a == 10; // true (prone to error)
-echo 10 == $a; // true (better)
+echo $a == 10; // prone to error
+echo 10 == $a; // better
 
 $a = 9;
 
