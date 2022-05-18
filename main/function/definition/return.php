@@ -2,8 +2,8 @@
 
 /**
  * Return is not a function, it is a language construct.
- * Parantheses are not required and it is commmont ...
- * to leave them out
+ * Parantheses are not required and ...
+ * it is commmont to leave them out.
  */
 
 function A() {
