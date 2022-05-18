@@ -1,9 +1,11 @@
 <?php
 
-// Identical - Correct
+// Identical
 $domain = 'xn--google.com';
-echo $finded = (stripos($domain, 'xn--') === 0); // true
+echo (stripos($domain, 'xn--') === 0); // true
+    // Correct
 
-// Equal - Incorrect
+// Equal
 $domain2 = 'google.com';
-echo $finded = (stripos($domain2, 'xn--') == 0); // true
+echo (stripos($domain2, 'xn--') == 0); // true
+    // Incorrect
