@@ -3,8 +3,7 @@
 /**
  * AND
  * 
- * Evaluates to true if ...
- * both the left and right operands evaluate to true.
+ * Evaluates to true if both the left and right operands evaluate to true
  */
 
 echo ( isset($a) && isset($b) ) ? " / both set" : "false";
@@ -19,8 +18,7 @@ echo ( isset($a) && isset($b) ) ? " / both set" : "false";
 /**
  * OR
  * 
- * Evaluates to true if ...
- * either the left or right operands evaluate to true.
+ * Evaluates to true if either the left or right operands evaluate to true.
  */
 
 $c = 3;
