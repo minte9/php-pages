@@ -4,8 +4,7 @@
  * Function names are case-insensitive
  * 
  * Having a function name() and adding a new one Name() ...
- * throws a Fatal error: 
- *      Cannot redeclare Name()
+ * throws a Fatal error: Cannot redeclare Name()
  */
 
 function name() {
