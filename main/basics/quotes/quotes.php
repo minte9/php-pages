@@ -1,7 +1,6 @@
 <?php
 
-$a = 'n';
-echo '$a';  // $a
+$a = 4;
 
-$b = 'n';
-echo "$b";  // n
+echo '$a';  // $a
+echo "$a";  // 4
