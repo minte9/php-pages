@@ -4,8 +4,6 @@
  * that are case-sensitive. The other are constants.
  */
 
-error_reporting(E_ALL);
-
 $Name = "John";
 echo $name; 
     // Undefined variable: name
