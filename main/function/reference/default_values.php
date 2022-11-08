@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Default function arguments
+ */
+
 function test($var1, &$var2 = null) 
 {
     $var2 = "c";

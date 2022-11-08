@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Function arguments passed by reference
+ */
+
 function findAndCount($str, $char, &$count) // Look Here
 {
     for($i=0; $i<strlen($str); $i++) {
