@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Callbaks used with filter and map
+ */
+
 $arr = array(0, 3, 10);
 
 $data1 = array_filter ($arr, function($x) { // isEven

@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Anonimous function - declaration
+ */
+
 $a = function($var) {
     return "Hello $var";
 };  // ; at the end
