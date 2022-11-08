@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
 /**
- * Prior to PHP 7.4
+ * Prior to PHP 7.4 ...
  * 
- * This sort of strict data would have required ...
+ * Using strict data would have required ...
  * to enforce the data integrity.
  * 
  *      setBirthDate(DateTime $birthday): void
@@ -20,7 +20,7 @@ class A
     public ?String $name; // can be null
     public DateTime $birthday;  // Look Here
 
-    public function setBirthDay($day) 
+    public function setBirthDay($day) : void
     {
         $this->birthday = $day;
     }
