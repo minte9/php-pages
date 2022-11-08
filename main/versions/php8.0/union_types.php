@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 /**
  * Union Types
@@ -15,7 +15,7 @@ class A
 {
     private static int|float $i = 10; // Look Here
 
-    public function add(float|int $n, ?string $name)
+    public function add(int|float $n, ?string $name)
     {
         self::$i +=  $n;
     }
