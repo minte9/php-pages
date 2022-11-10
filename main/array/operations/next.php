@@ -2,7 +2,6 @@
 
 /**
  * Reset, key, next, current ...
- * are used when working with array internal pointer
  */
 
 $arr = [
