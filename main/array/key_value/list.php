@@ -2,7 +2,7 @@
 
 /**
  * List assign multiple variables at once ...
- * from array
+ * from array ff
  */
 
 list($a, $b) = [1, 2];
