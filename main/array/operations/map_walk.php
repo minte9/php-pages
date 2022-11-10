@@ -17,9 +17,7 @@ $res2 = array_map(
 print_r($res1); // 1, 8, 27
 print_r($res2); // 1, 8, 27
 
-/** 
- * Array_walk() needs reference
- */
+#
 
 $arr = array(1,2,3,4);
 function setDouble($value) // incorrect
