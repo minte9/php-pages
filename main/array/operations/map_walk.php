@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Array_map() with function name
- * Array_map() with arrow function
- * Array_walk() needs reference (in function declaration)
+ * Array map with function name
+ * Array map with arrow function
+ * Array walk needs reference (in function declaration)
  */
 
 # Map
