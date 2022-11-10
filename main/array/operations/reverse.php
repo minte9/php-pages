@@ -2,7 +2,6 @@
 
 /**
  * Reverse the order of elements in array
- * 
  * Use array_reverse()
  */
 
