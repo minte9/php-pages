@@ -27,7 +27,7 @@ print_r($B); // 1, 8, 27
 $C = [1, 2, 3];
 $D = [1, 2, 3];
 
-function setDouble($value) // no reference
+function setDouble($value)
 { 
     $value * 2;
 }
