@@ -12,7 +12,7 @@ $A = [1, 2, 3];
 $B = [1, 3, 4];
 
 $C = array_diff($A, $B);
-print_r($C); // [1] => 2
+$D = array_intersect($A, $B);
 
-$C = array_intersect($A, $B);
-print_r($C); // [0] => 1 [2] => 3
+print_r($C); // [1] => 2
+print_r($D); // [0] => 1 [2] => 3
