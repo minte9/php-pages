@@ -2,7 +2,8 @@
 
 /**
  * List constructor
- * Very usefull for string explode
+ * 
+ * Very often used with string explode
  */
 
 list($surname, $name, $age) = ["John", "Smith", "34", "07288333"];
