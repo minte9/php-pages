@@ -2,7 +2,6 @@
 
 /**
  * Check if array exists
- * 
  * Use is_array() / not count()
  */
 
