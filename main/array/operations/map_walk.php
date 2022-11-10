@@ -1,8 +1,9 @@
 <?php
 
 /**
- * Array_map() with function Name ...
- * or arrow function
+ * Array_map() with function name
+ * Array_map() with arrow function
+ * Array_walk() needs reference (in function declaration)
  */
 
 function cube($n) 
@@ -13,15 +14,15 @@ $res1 = array_map('cube', [1, 2, 3]);
 $res2 = array_map(
     fn($x) => pow($x, 3), [1, 2, 3]
 );
-print_r($res1); // [1, 8, 27] 
-print_r($res2); // [ 1, 8, 27 ]
+print_r($res1); // 1, 8, 27
+print_r($res2); // 1, 8, 27
 
 /** 
  * Array_walk() needs reference
  */
 
 $arr = array(1,2,3,4);
-function setDouble($value) 
+function setDouble($value) // incorrect
 { 
     $value * 2;
 }
