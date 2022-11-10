@@ -6,6 +6,8 @@
  * Array_walk() needs reference (in function declaration)
  */
 
+# Map
+
 function cube($n) 
 {
     return pow($n, 3);
@@ -17,7 +19,7 @@ $res2 = array_map(
 print_r($res1); // 1, 8, 27
 print_r($res2); // 1, 8, 27
 
-#
+# Walk
 
 $arr = array(1,2,3,4);
 function setDouble($value) // incorrect
