@@ -7,4 +7,6 @@
  */
 
 $A = [1, 2, 'b'=>'green', 2];
-print_r(array_unique($A)); // 1, 2, green
+$B = array_unique($A);
+
+print_r($B); // 1, 2, green
