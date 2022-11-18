@@ -1,7 +1,8 @@
 <?php
 
 /**
- * array_search
+ * Array search function return boolean
+ * Always use identical operator
  */
 
 $A = [1,2,3,4];
