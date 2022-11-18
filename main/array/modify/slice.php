@@ -1,9 +1,9 @@
 <?php
 
 /**
- * array_slice()
+ * array_slice(), array_splice()
  * 
- * Remove a portion with something else
+ * Extract or remove a portion from array
  */
 
 $A = [1, 2, 3, 4, 5];
