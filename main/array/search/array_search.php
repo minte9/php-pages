@@ -1,7 +1,9 @@
 <?php
 
 /**
- * Array search function return boolean
+ * array_search()
+ * 
+ * The search returns boolean
  * Always use identical operator
  */
 
