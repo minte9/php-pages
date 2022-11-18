@@ -9,4 +9,4 @@ $B = ['a'=>NULL, 'b'=>2];
 
 echo (in_array(1, $A) === true); // 1
 echo (isset($B['a']) === false); // 1
-echo (array_key_exists('a', $B) === true); // 
+echo (array_key_exists('a', $B) === true); // 1
