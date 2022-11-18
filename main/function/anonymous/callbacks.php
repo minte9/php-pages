@@ -1,18 +1,18 @@
 <?php
 
 /**
- * Callbaks used with filter and map
+ * Callbaks with filter and map
  */
 
-$arr = array(0, 3, 10);
+$A = array(0, 3, 10);
 
-$data1 = array_filter ($arr, function($x) { // isEven
-    return $x % 2 == 0;
-});  
+$B = array_filter (
+    $A, fn($x) => $x % 2 == 0 // isEven  
+); 
 
-$data2 = array_map(function ($x) { // square
-    return $x*$x; 
-}, $arr); 
+$C = array_map(
+    fn($x) => $x*$x, $A // square 
+);
 
-print_r($data1); // [0, 100]
-print_r($data2); // [0, 9, 100]
+print_r($B); // [0, 100]
+print_r($C); // [0, 9, 100]
