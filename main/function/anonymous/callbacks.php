@@ -11,8 +11,8 @@ $B = array_filter(
 );  
 
 $C = array_map(
-    fn($x) => $x*$x, $A) // square
-; 
+    fn($x) => $x*$x, $A // square
+); 
 
 print_r($B); // 0, 100
 print_r($C); // 0, 9, 100
