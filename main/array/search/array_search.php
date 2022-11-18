@@ -3,7 +3,7 @@
 /**
  * array_search()
  * 
- * The search returns boolean
+ * The search may return false
  * Always use identical operator
  */
 
