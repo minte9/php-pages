@@ -16,5 +16,5 @@ function isEven($var) : bool
     return ! ($var & 1); // bit 1 not set
 }
 
-print_r(array_filter($A, 'odd')); //  [1, 3. 5]
-print_r(array_filter($A, 'isEven'));// [2, 4, 6]
+print_r(array_filter($A, 'odd'));   //  [1, 3. 5]
+print_r(array_filter($A, 'isEven')); // [2, 4, 6]
