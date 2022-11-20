@@ -12,4 +12,4 @@ foreach ($A as &$val) { // Look Here
 }
 
 var_dump($A == [2, 4, 6, 8]); // true
-var_dump($A != [1, 2, 3, 4]); // false
+var_dump($A != [1, 2, 3, 4]); // true
