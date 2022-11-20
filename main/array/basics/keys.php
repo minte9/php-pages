@@ -7,22 +7,17 @@
  * Array keys are case-sensitive, but type insensitive
  */
 
-$a = array(2 => 5);
-$b = array('4' => 5, 'a' => 'b');
+$A = array(2 => 5);
+$B = array('4' => 5, 'a' => 'b');
+$C = ['A' => 1, 'a' => 2, '1' => 3, 1=> 4, '01' => 5];
 
-$a[] = 'a'; // key = 3
-$b[] = 44;  // key = 5
+$A[] = 'a'; // key = 3
+$B[] = 44;  // key = 5
 
-echo $a[3] == 'a'; // 1 (true)
-echo $b[5] == 44; // 1 (true)
+var_dump($A[3] == 'a'); // true
+var_dump($B[5] == 44); // true
 
+var_dump($C['A'] == $C['a']); // false
+var_dump($C['1'] == $C[1]); // true
 
-$c = array (
-    'A'  => 1,
-    'a'  => 2,
-    '1'  => 3, // equal with 1
-     1   => 4,
-    '01' => 5, // NOT equal with 1
-);
-
-print_r($c); // A=>1, a=>2, 1=>4, 01=>5
+print_r($C); // A=>1, a=>2, 1=>4, 01=>5
