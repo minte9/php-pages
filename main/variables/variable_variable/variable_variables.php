@@ -17,8 +17,7 @@ echo $$name;    // 456
 echo ${'123'};  // 456
 
 $debug = false; // Look Here
-
 $_POST = array('debug' => 1);
-extract($_POST); // Security issue
+extract($_POST);
 
-var_dump($debug == true); // true
+var_dump($debug == true); // true - Security issue
