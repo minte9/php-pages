@@ -1,8 +1,6 @@
 <?php
 
 /**
- * &$value
- * 
  * Reference with foreach changes the array
  * Use it with care
  */

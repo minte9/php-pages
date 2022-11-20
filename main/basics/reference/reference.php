@@ -1,6 +1,6 @@
 <?php
 /**
- * Variable are passed by value (not by reference).
+ * Variable are passed by value (not by reference)
  */
 
 $a =  1; 
