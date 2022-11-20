@@ -6,7 +6,7 @@
  * Storabale representation (string) for an array
  */
 
-$data = ['name' => 'Smith', 'age' => 30];
+$data = ['name'=>'Smith', 'age'=>30];
 $encoded = serialize($data);
 $decoded = unserialize($encoded);
 
