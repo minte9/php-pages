@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Arithmetics on chars follows Perl's convention.
+ * Arithmetics on chars follows Perl's convention
  */
 
 $i = 'W';
