@@ -1,7 +1,8 @@
 <?php
 /**
- * stdClass is the default PHP object
+ * stdClass()
  * 
+ * Is the default PHP object
  * Has no properties, methods or parent
  * 
  * When you cast an array as Object, ...
