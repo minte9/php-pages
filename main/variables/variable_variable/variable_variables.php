@@ -13,19 +13,12 @@
 $name = '123';
 $$name = '456';
 
-echo $$name; // 456
-echo ${'123'}; // 456
+echo $$name;    // 456
+echo ${'123'};  // 456
 
-
-/**
- * Security issues ...
- */
-
-$debug = false;
+$debug = false; // Look Here
 
 $_POST = array('debug' => 1);
-extract($_POST);
+extract($_POST); // Security issue
 
-if ($debug) {
-    echo "sql queries"; // debug is true!
-}
+var_dump($debug == true); // true
