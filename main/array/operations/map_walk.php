@@ -1,8 +1,7 @@
 <?php
 
 /**
- * array_map()
- * array_walk()
+ * array_map, array_walk()
  * 
  * Array walk needs reference
  */
