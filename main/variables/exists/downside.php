@@ -6,10 +6,10 @@
  * will exist at any given point
  * 
  * isset() will return TRUE if a variable ...
- * exists and has a value other than NULL
+ *      exists and has a value other than NULL
  * 
  * empty() will returns TRUE if a variable ...
- * has a empty and zero value ("", 0, NULL)
+ *      has a empty and zero value ("", 0, NULL)
  */
 
 if(isset($a) && $a != "")
