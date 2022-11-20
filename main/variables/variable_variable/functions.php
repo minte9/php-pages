@@ -1,12 +1,12 @@
 <?php
+
 /**
  * Variable name for functions
  */
 
 function myFunc() {
-    echo 'function code';
+    echo 'code';
 }
 
 $echo = 'myFunc';
-$echo();  
-    // function code
+$echo(); // code
