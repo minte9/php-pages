@@ -5,7 +5,7 @@
  * Is the default PHP object
  * Has no properties, methods or parent
  * 
- * When you cast an array as Object, ...
+ * When you cast an array as Object,
  * you get an instance of stdClass
  */
 
