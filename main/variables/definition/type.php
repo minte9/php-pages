@@ -8,10 +8,9 @@
  */
 
 $a = "abc";
+$b = 0 + "1";
+$c = new ArrayObject();
+
 echo gettype($a); // string
-
-$a = 0 + "1";
-echo gettype($a); // integer
-
-$a = new ArrayObject();
-echo gettype($a); // object
+echo gettype($b); // integer
+echo gettype($c); // object
