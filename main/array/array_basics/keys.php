@@ -2,18 +2,20 @@
 
 /**
  * PHP automaticaly assign a number as key ...
- * Key > the greatest key
+ * The new key > the greatest key
  * 
- * Array keys are case-sensitive, but type insensitive.
+ * Array keys are case-sensitive, but type insensitive
  */
 
-$a = array (2 => 5);
-$a[] = 'a'; // This will have a key of 3
-echo $a[3]; // a
+$a = array(2 => 5);
+$b = array('4' => 5, 'a' => 'b');
 
-$b = array ('4' => 5, 'a' => 'b');
-$b[] = 44; // This will have a key of 5
-echo $b[5]; // 44
+$a[] = 'a'; // key = 3
+$b[] = 44;  // key = 5
+
+echo $a[3] == 'a'; // 1 (true)
+echo $b[5] == 44; // 1 (true)
+
 
 $c = array (
     'A'  => 1,
@@ -23,4 +25,4 @@ $c = array (
     '01' => 5, // NOT equal with 1
 );
 
-var_dump($c); // [A=>1, a=>2, 1=>4, 01=>5]
+print_r($c); // A=>1, a=>2, 1=>4, 01=>5
