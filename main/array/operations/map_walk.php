@@ -1,39 +1,29 @@
 <?php
 
 /**
- * Array map with function name
- * Array map with arrow function
- * Array walk needs reference (in function declaration)
+ * array_map()
+ * array_walk()
+ * 
+ * Array walk needs reference
  */
-
-# Map
-
-$A = [1, 2, 3];
-$B = [1, 2, 3];
 
 function cube($n) 
 {
     return pow($n, 3);
 }
 
-$A = array_map('cube', $A); 
-$B = array_map(fn($x) => pow($x, 3), $B);
-
-print_r($A); // 1, 8, 27
-print_r($B); // 1, 8, 27
-
-# Walk
-
+$A = [1, 2, 3];
+$B = [1, 2, 3];
 $C = [1, 2, 3];
 $D = [1, 2, 3];
 
-function setDouble($value)
-{ 
-    $value * 2;
-}
+$A = array_map('cube', $A); 
+$B = array_map(fn($x) => pow($x, 3), $B);
 
-array_walk($C, 'setDouble');
-print_r($C); // 1 2 3
+array_walk($C, fn(&$x) => $x *= 2); // Look Here
+array_walk($D, fn(&$x) => $x = pow($x, 3));
 
-array_walk($D, fn(&$x) => $x *= 2); // with reference - Look Here
-print_r($D); // 2, 4, 6
+print_r($A); // 1 8 27
+print_r($B); // 1 8 27
+print_r($C); // 2 4 6
+print_r($D); // 1 8 27
