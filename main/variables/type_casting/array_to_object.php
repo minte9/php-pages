@@ -1,10 +1,10 @@
 <?php
+
 /**
  * Array to Object type casting
  */
 
-$arr = array('senderId' => 10);
+$A = array('senderId' => 10);
+$B = (object) $A;
 
-$obj = (object) $arr;
-
-echo $obj->senderId; // 10
+echo $B->senderId; // 10
