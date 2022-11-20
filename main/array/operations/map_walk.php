@@ -22,7 +22,6 @@ $B = array_map(fn($x) => pow($x, 3), $B);
 array_walk($C, fn(&$x) => $x = pow($x, 3));
 array_walk($D, fn(&$x) => $x *= 2); // Look Here
 
-
 print_r($A); // 1 8 27
 print_r($B); // 1 8 27
 print_r($C); // 1 8 27
