@@ -9,9 +9,8 @@
 
 $a = 1;
 echo $a++; // 1
+echo ++$a; // 3
 
-$a = 1;
-echo ++$a; // 2
-
-$a = TRUE;
-echo ++$a; // 1
+$b = true;
+var_dump(++$b == true); // true
+var_dump($b++ == true); // true
