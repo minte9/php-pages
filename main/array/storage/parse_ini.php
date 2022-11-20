@@ -1,8 +1,10 @@
 <?php
 
 /**
- * config.ini
+ * parse_ini_file()
  * 
+ * inc/config.ini:
+ *  
  * url_base = "api.com/RestApi/v1/"
  * ssl_verifyhost = 2
  * auth_type = "token"
