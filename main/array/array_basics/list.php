@@ -3,7 +3,7 @@
 /**
  * list() 
  * 
- * It is not really a function, but a language construct
+ * Not really a function, but a language construct
  * 
  * List doesn't work with strings
  * Often used with string explode()
