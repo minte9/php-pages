@@ -7,10 +7,9 @@
 class MyClass {
 
     const A = 1;
+    private const B = 2;
  
-    public function  __construct() 
-    {
-    }
+    public function  __construct() {}
 }
 
 echo MyClass::A; // 1
