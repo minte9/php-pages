@@ -15,9 +15,9 @@ $A[] = 'a'; // key = 3
 $B[] = 44;  // key = 5
 
 var_dump($A[3] == 'a'); // true
-var_dump($B[5] == 44); // true
+var_dump($B[5] == 44);  // true
 
 var_dump($C['A'] == $C['a']); // false
-var_dump($C['1'] == $C[1]); // true
+var_dump($C['1'] == $C[1]);  // true
 
 print_r($C); // A=>1, a=>2, 1=>4, 01=>5
