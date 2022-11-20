@@ -1,8 +1,10 @@
 <?php
 /**
- * PHP will implicitly change the type of a variable as needed.
+ * PHP will implicitly ...
+ * change the type of a variable as needed
  * 
- * This contrasts with strongly typed languages, like C and Java
+ * This contrasts with strongly typed languages, 
+ * like C and Java
  */
 
 $a = "abc";
