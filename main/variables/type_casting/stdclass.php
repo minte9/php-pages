@@ -1,25 +1,18 @@
 <?php
 /**
- * stdClass is the default PHP object.
- * stdClass has no properties, methods or parent.
- *
- * It does not support magic methods.
- * It implements no interfaces.
+ * stdClass is the default PHP object
  * 
- * When you cast a scalar or array as Object, ...
- * you get an instance of stdClass.
+ * Has no properties, methods or parent
+ * 
+ * When you cast an array as Object, ...
+ * you get an instance of stdClass
  */
 
-$obj = (object) array(); // OR
-$obj = new stdClass();
+$A = (object) array(); // OR
+$A = new stdClass();
 
-$obj->key1 = "value1";
-$obj->key2 = "value2";
+$B = (object) [1, 2];
+$B->x = "3";
+$B->y = "4";
 
-var_dump($obj);
-
-/*
-object(stdClass)[1]
-      public 'key1' => string 'value1' (length=6)
-      public 'key2' => string 'value2' (length=6)
-*/
+print_r($B); // stdClass Object( 0=>1, 1=>2, x=>3, y=>4)
