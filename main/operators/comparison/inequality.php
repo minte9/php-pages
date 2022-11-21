@@ -3,8 +3,7 @@
 /** 
  * Comparing strings
  *
- * D > C
- * a > A 
+ * D > C,  a > A 
  * 
  * ASCII value of a (97)
  * ASCII value of A (65)
