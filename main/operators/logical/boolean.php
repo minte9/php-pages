@@ -1,15 +1,9 @@
 <?php
 
 /**
- * AND &&
- * True if BOTH operands evaluate to true
- * 
- * OR ||
- * Evaluates to true if EITHER operands true
- * 
- * XOR
- * Evaluates to true if either operands true ...
- * but NOT BOTH
+ * AND &&   True if BOTH operands evaluate to true
+ * OR ||    Evaluates to true if EITHER operands true
+ * XOR      Evaluates to true if either operands true, but NOT BOTH
  * 
  * PHP will first convert any other value to a Boolean ...
  * and then perform the operation
