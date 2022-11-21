@@ -20,6 +20,6 @@
 $a = 1;
 $b = 1;
 
-var_dump($a == $b ? "true" : "false"); // 'true'
-var_dump($a ?: $b); // 1
-var_dump($n ?? "None"); // 'None'
+var_dump($a == $b ? "true" : "false");  // true
+var_dump($a ?: $b);                     // 1
+var_dump($n ?? "None");                 // None
