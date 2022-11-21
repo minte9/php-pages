@@ -9,5 +9,5 @@
  * ASCII value of A (65)
  */
 
-var_dump("ABC" > "ABD"); // false
-var_dump("apple" > "Apple"); // true
+var_dump("ABC" > "ABD");        // false
+var_dump("apple" > "Apple");    // true
