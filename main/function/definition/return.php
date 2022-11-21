@@ -1,9 +1,8 @@
 <?php
 
 /**
- * Return is not a function, it is a language construct.
- * Parantheses are not required and ...
- * it is commmont to leave them out.
+ * Return is not a function, it is a language construct
+ * Parantheses are not required
  */
 
 function A() {
@@ -11,8 +10,8 @@ function A() {
 }
     
 function B() {
-    return 2; // also, it is faster
+    return 2; // faster
 }
     
-echo A(); // Output: 1
-echo B(); // Output: 2
+echo A(); // 1
+echo B(); // 2
