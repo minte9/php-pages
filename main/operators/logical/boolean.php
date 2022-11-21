@@ -1,50 +1,29 @@
 <?php
 
 /**
- * AND
- * Evaluates to true if both ...
- * the left and right operands evaluate to true
- */
-
-echo ( isset($a) && isset($b) ) ? " / both set" : "false";
-    // false
-$a = 1;
-$b = 2;
-echo ( isset($a) && isset($b) ) ? " / both set" : "false";
-    // both set
-
-
-/**
- * OR
- * Evaluates to true if either ...
- * the left or right operands evaluate to true.
- */
-
-$c = 3;
-echo ( isset($c) OR isset($d) ) ? " / at least one" : "false";
-    // at least one
-
-
-/**
+ * AND &&
+ * True if BOTH operands evaluate to true
+ * 
+ * OR ||
+ * Evaluates to true if EITHER operands true
+ * 
  * XOR
- * Evaluates to true if either ...
- * the left and right operands evaluates to true ...
- * but not both
- */
-
-$a = "1";
-$b = "abc";
-echo ( is_numeric($a) XOR is_numeric($b) ) ? " / only one number" : "false";
-    // only one number
-
-
-/**
- * It's important to understand that ...
- * all logical operators only work with Boolean values.
+ * Evaluates to true if either operands true ...
+ * but NOT BOTH
  * 
  * PHP will first convert any other value to a Boolean ...
- * and then perform the operation.
+ * and then perform the operation
  */
 
-echo 1 && "abc" ? " / both true" : "false";
-    // both true
+$a = 1; $a2 = null; $a3 = 'NULL';
+
+var_dump(isset($a) && isset($a2)); // false
+var_dump(isset($a) && isset($a3)); // true
+
+var_dump(isset($a) || isset($a2)); // true
+var_dump(isset($a) || isset($a3)); // true
+
+$a = "1"; $b = "abc";
+
+var_dump(is_numeric($a) XOR is_numeric($b)); // true
+var_dump($a && $b); // true, automatic convertion to Boolean
