@@ -1,12 +1,15 @@
 <?php
 
+/**
+ * Comparition operator, prone to error
+ */
+
 $a = 10;
+$b = 9;
 
-echo $a == 10; // prone to error
-echo 10 == $a; // better
+var_dump($a == 10); // true
+var_dump(10 == $a); // better
 
-$a = 9;
-
-if ($a == 10) {}
-if ($a = 10) {} // No alert error
-if (10 == $a) {} // Better
+if ($b = 10) {
+    echo $b; // 10 - Incorrect
+}
