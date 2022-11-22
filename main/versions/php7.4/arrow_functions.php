@@ -1,21 +1,18 @@
 <?php
 
 /**
- * Arrow functions, also called "short closures", 
- * allow for less verbose one-liner functions.
+ * Arrow functions, less verbose code
  */
 
-$posts = [
+$data = [
     (object) ['id' => 1, 'name' => 'John'],
     (object) ['id' => 2, 'name' => 'Mark'],
 ];
 
-// PHP 7.4+
-$ids = array_map(fn($post) => $post->id, $posts); // Look Here
-print_r($ids); // [1, 2]
+$A = array_map(fn($v) => $v->id, $data);    // PHP > 7.4+
+$B = array_map(function ($v) {              // PHP < 7.4 
+    return $v->id;
+}, $data);
 
-// PHP < 7.4 
-$ids = array_map(function ($post) {
-    return $post->id;
-}, $posts);
-print_r($ids); // [1, 2]
+print_r($A); // 1, 2
+print_r($B); // 1, 2
