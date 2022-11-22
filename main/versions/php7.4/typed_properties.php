@@ -8,37 +8,41 @@
  * 
  *      setBirthDate(DateTime $birthday): void
  *      getBirthDate(): \DateTime 
- * 
- * Unititalized state:
- * 
- * To mark a property can be null, prefix its type with a question mark.
- * Even if a property is nullable, its uninitialized value will not be null.
+
+ * To mark property can be null, ...
+ * prefix its type with a question mark
  */
 
 class A 
 {
-    public ?String $name; // can be null
-    public DateTime $birthday;  // Look Here
+    public DateTime $day;  // Look Here
 
-    public function setBirthDay($day) : void
+    public function set($day) : void
     {
-        $this->birthday = $day;
+        $this->day = $day;
     }
 
-    public function getBirthDay()
+    public function get() : String
     {
-        return $this->birthday->format('d-m-Y');
+        return $this->day->format('d-m-Y');
     }
 }
 
+class B 
+{
+    public ?String $day; // Can be null
+    public function __construct() {}
+}
+
 $a = new A();
-$a->name = null; // set as null
-$a->setBirthDay(new DateTime('2011-12-01'));
-echo $a->getBirthDay(); // 01-12-2011
+$b = new B();
+
+$a->set(new DateTime('2011-12-01'));
+var_dump($a->get() == '01-12-2011'); // true
 
 try {
-    $a = new A();
-    $a->name = 10;
+    $a->day = null;
+    $b->day = null;
 } catch(TypeError $e) {
-    echo $e->getMessage(); // Cannot assign int to property
+    echo $e->getMessage(); // Cannot assign null A::day
 }
