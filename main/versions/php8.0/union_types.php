@@ -3,33 +3,33 @@
 /**
  * Union Types
  * 
- * Prior to PHP 8.0 you could only declare a single type for ...
- * properties, parameters, and return types.
+ * Prior to PHP 8.0 you could only declare a single type for
+ * properties, parameters, and return types
  * 
- * To separate each datatype use pipe |
- * 
+ * To separate each datatype use pipe
  * ?string - equivalent with string|null
  */
 
-class A 
+class MyClass 
 {
-    private static int|float $i = 10; // Look Here
-
-    public function add(int|float $n, ?string $name)
+    private int|float $i = 10; // Look Here
+    
+    public function set(int|float $n, ?string $name): void
     {
-        self::$i +=  $n;
+        $this->i +=  $n;
     }
 
     public function get(): int|float
     {
-        return self::$i;
+        return $this->i;
     }
 }
 
-$a = new A();
+$a = new MyClass();
+$b = new MyClass();
 
-$a->add(10, "one");
+$a->set(10, "one");
+$b->set(5.5, NULL); 
+
 echo $a->get(); // 20
-
-$a->add(2.2, NULL); 
-echo $a->get(); // 22.2
+echo $b->get(); // 5.5

@@ -1,13 +1,11 @@
-<?php
+<?php declare(strict_types=1);
 
 /**
  * Match expression
  * 
  * Match syntax improves the switch syntax in multiple ways:
- *      - returns value
- *      - multiple matching conditions allowed
- *      - implicit break
- *      - strict matching (value and type)
+ * returns value; multiple matching conditions allowed
+ * implicit break; strict matching (value and type)
  */
 
 class B 
@@ -38,10 +36,10 @@ class B
 }
 
 try {
-    new B('POST');  // This is POST
-    new B('GET');   // This is GET
-    new B('HEAD');  // This is GET
-    new B('HTTP');
+    new B('POST'); // This is POST
+    new B('GET');  // This is GET
+    new B('HEAD'); // This is GET
+    new B('HTTP'); // Unsupported
 } catch(Exception $e) {
-    echo $e->getMessage(); // Unsupported
+    echo $e->getMessage(); 
 }
