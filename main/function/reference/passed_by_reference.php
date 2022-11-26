@@ -1,16 +1,19 @@
 <?php
 
 /**
- * Function arguments passed by reference
+ * Function arguments, passed by reference
  */
 
-function findAndCount($str, $char, &$count) // Look Here
+function findAndCount($s, $char, &$j) // Look Here
 {
-    for($i=0; $i<strlen($str); $i++) {
-        if ($str[$i] == $char) $count++;
+    $i = 0;
+    while($i < strlen($s)) {
+        if ($s[$i] == $char) 
+            $j++;
+        $i++;
     }
 }
 
 findAndCount("abca", "a", $count);
 
-echo $count; // output 2
+echo $count; // 2

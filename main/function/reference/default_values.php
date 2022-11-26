@@ -4,14 +4,13 @@
  * Default function arguments
  */
 
-function test($var1, &$var2 = null) 
+function test($x, &$y = null) 
 {
-    $var2 = "c";
+    $y = 100;
 }
 
-$var1 = 'a';
-$var2 = 'b';
+$x = 1;
+$y = 2;
 
-test($var1, $var2);
-
-echo $var2; // Output: c
+test($x, $y);
+echo $y; // 100
