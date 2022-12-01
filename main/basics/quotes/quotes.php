@@ -1,6 +1,6 @@
 <?php
 
-$a = 4;
+$a = "Hello World";
 
 echo '$a';  // $a
-echo "$a";  // 4
+echo "$a";  // Hello World
