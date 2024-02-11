@@ -5,7 +5,7 @@
     Until now our application has only one page.
     Let's add another page that says goodbye.
 
-    The trick is the usage of Request::getPathInfo() which returns the front controller script name.
+    Request::getPathInfo() returns the front controller script name.
     $map associates URL paths with their corresponding PHP script paths.
 
     cd github/php-pages/main/framework/front_controller/
