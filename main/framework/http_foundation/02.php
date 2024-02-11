@@ -1,9 +1,8 @@
 <?php
-/*
-    http_foundation/02.php - Request Object
-*/
+# http_foundation/02.php - Request Object
 
 require_once __DIR__.'/vendor/autoload.php';
+
 use Symfony\Component\HttpFoundation\Request;
 
 $request = Request::createFromGlobals();

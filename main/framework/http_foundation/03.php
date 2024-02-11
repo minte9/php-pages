@@ -1,11 +1,6 @@
 <?php
 
-/**
- * Response simulation - index3.php
- * 
- * php -S localhost:8000
- * http://localhost:8000/index3.php
- */
+// http_foundation/03.php - Response simulation
 
 require_once __DIR__.'/vendor/autoload.php';
 
