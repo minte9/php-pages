@@ -12,12 +12,9 @@
     composer require symfony/http-foundation
     php -S localhost:8000 front.php
 
-    http://localhost:8000/hello
-        Hello World
-    http://localhost:8000/bye
-        Goodbye!
-    http://localhost:8000/front.php
-        Page not found
+    http://localhost:8000/hello     # Hello World
+    http://localhost:8000/bye       # Goodbye!
+    http://localhost:8000/front.php # Page not found
 */
 
 ini_set('display_errors', 1);
