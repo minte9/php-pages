@@ -1,13 +1,13 @@
 <?php
 /*
-    front_controller/front.php - Single Entry Application
+    front_controller/public/front.php - Single Entry Application
 
     Request::getPathInfo() returns the front controller script name.
     $map associates URL paths with their corresponding PHP script paths.
 
     cd github/php-pages/main/framework/front_controller/
     composer require symfony/http-foundation
-    php -S localhost:8000 front.php
+    php -S localhost:8000 public/front.php
 
     http://localhost:8000/hello     # Hello World
     http://localhost:8000/bye       # Goodbye!
