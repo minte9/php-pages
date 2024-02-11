@@ -2,9 +2,6 @@
 /*
     front_controller/front.php - Single Entry Application
 
-    Until now our application has only one page.
-    Let's add another page that says goodbye.
-
     Request::getPathInfo() returns the front controller script name.
     $map associates URL paths with their corresponding PHP script paths.
 
@@ -34,12 +31,14 @@ $map = [
 $path = $request->getPathInfo();
 
 if (! isset($map[$path])) {
-    $response->setStatusCode(404);
-    $response->setContent("Page not found");
-} else {
     ob_start();
+    
     require($map[$path]);
     $response->setContent(ob_get_clean()); // Look here
+    
+} else {
+    $response->setStatusCode(404);
+    $response->setContent("Page not found");
 }
 
 $response->send();
