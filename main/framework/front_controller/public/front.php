@@ -15,7 +15,7 @@
 */
 
 ini_set('display_errors', 1);
-require_once __DIR__.'/vendor/autoload.php';
+require_once __DIR__.'/../vendor/autoload.php';
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -24,13 +24,13 @@ $request = Request::createFromGlobals();
 $response = new Response();
 
 $map = [
-    '/hello' => __DIR__ . '/src/pages/hello.phtml',
-    '/bye' => __DIR__ . '/src/pages/bye.phtml',
+    '/hello' => __DIR__ . '/../src/pages/hello.phtml',
+    '/bye' => __DIR__ . '/../src/pages/bye.phtml',
 ];
 
 $path = $request->getPathInfo();
 
-if (! isset($map[$path])) {
+if (isset($map[$path])) {
     ob_start();
     
     require($map[$path]);
