@@ -25,7 +25,7 @@ $response = new Response();
 
 $map = [
     '/hello' => __DIR__ . '/../src/pages/hello.phtml',
-    '/bye' => __DIR__ . '/../src/pages/bye.phtml',
+    '/goodby' => __DIR__ . '/../src/pages/goodby.phtml',
 ];
 
 $path = $request->getPathInfo();
