@@ -3,6 +3,12 @@
     http_foundation/02.php - Request Object
 
     http://localhost:8000/index2.php?name=Fabien
+        Fabien
+        /
+        null
+        localhost:8000
+        localhost:8000
+        GET
 */
 
 require_once __DIR__.'/vendor/autoload.php';
