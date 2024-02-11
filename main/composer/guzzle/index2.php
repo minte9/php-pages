@@ -1,9 +1,6 @@
 <?php
 
 /**
- * Guzzle is an abstraction layer for http request.
- * It uses cURL by default you can use any other http client that you want.
- * 
  * Send an asynchronous request:
  */
 
@@ -17,7 +14,11 @@ $request = new Request('GET', 'https://api.github.com/repos/guzzle/guzzle');
 
 $promise = $client->sendAsync($request)->then(
     function ($response) {
-        echo 'I completed! ' . $response->getBody();
+        echo 'Response is completed! ';
+        echo 'Response: ' . json_decode($response->getBody())->{'full_name'};
     }
 );
 $promise->wait();
+
+// Response is completed! 
+// Response: guzzle/guzzle

@@ -1,15 +1,4 @@
 <?php
-/**
- * Requests library
- * 
- * It is roughly based on the API from the excellent ...
- * Requests Python library.
- * 
- * Other HTTP libraries optimize for the library developer’s time.
- * Requests optimizes for your time.
- * 
- * composer require rmccue/requests
- */
 
 require_once __DIR__ . '/vendor/autoload.php';
 
@@ -18,13 +7,20 @@ use WpOrg\Requests\Requests;
 $url = 'http://httpbin.org/get';
 $headers = ['Accept' => 'Application/json'];
 $options = ['auth' => ['user', 'pass']];
+
+// Request
 $request = Requests::get($url, $headers, $options);
-
-echo $request->status_code; // 200
-echo $request->headers['content-type']; 
-    // application/json; charset=utf-8
-
 $body = json_decode($request->body);
 
-echo $body->origin; // 188.26.232.235
-echo $body->headers->Host; // httpbin.org
+// Output
+echo "Status code: {$request->status_code} \r\n";
+echo "Contend type: {$request->headers['content-type']} \r\n"; 
+echo "Origin: {$body->origin} \r\n";
+echo "Host: {$body->headers->Host}";
+
+/*
+    Status code: 200 
+    Contend type: application/json 
+    Origin: 188.25.141.235 
+    Host: httpbin.org
+*/

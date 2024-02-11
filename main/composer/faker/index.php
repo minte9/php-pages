@@ -1,26 +1,26 @@
 <?php
 
 /**
- * Even if this example shows a property access, 
- * each call to $faker->name yields a different (random) result. 
+ * Even if this example shows a property access, each call to $faker->name 
+ * yields a different (random) result. 
  * 
- * This is because Faker uses __get() magic, and forwards 
- * Faker\Generator->$property calls to Faker\Generator->format($property).
- * 
- * composer require fzaninotto/faker
+ * This is because Faker uses __get() magic, and forwards Faker\Generator->$property 
+ * calls to Faker\Generator->format($property).
  */
 
 require_once __DIR__ . '/vendor/autoload.php';
 
 $faker = Faker\Factory::create();
 
-echo $faker->name; // Buck Mohr
-echo $faker->name; // Eloisa Wuckert
-echo $faker->name; // Jessica Keeling
+echo $faker->name . " | " . $faker->name . "\r\n";
+echo $faker->address . "\r\n";
+echo $faker->country . " | " . $faker->country . "\r\n";
+echo $faker->countryCode . " | " . $faker->countryCode;
 
-echo $faker->address; // Bertachester, IN 2354406568 Daisha Locks Suite 522
-echo $faker->address; // Lake Lolafurt, AZ 55458009 Marvin Dale
-echo $faker->address; // Mafaldamouth, VA 92131
-
-echo $faker->country; // Bulgaria
-echo $faker->countryCode; // PF
+/*
+    Queen Daniel | Rosario Blick
+    80410 Mohr Mews
+    Alisatown, LA 83654
+    Gambia | United Kingdom
+    EH | EE
+ */

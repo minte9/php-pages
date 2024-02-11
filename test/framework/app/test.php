@@ -1,15 +1,14 @@
 <?php
+/*
+    test.php - Unit Tests
 
-/**
- * test.php - unit tests
- * 
- * cd ../test/framework/custom/
- * composer require --dev phpunit/phpunit
- * 
- * vendor/bin/phpunit test.php
- *      OK (1 test, 1 assertion)
- * 
- */
+    cd ../test/framework/app/
+    composer require --dev phpunit/phpunit
+
+    vendor/bin/phpunit test.php
+        OK (1 test, 1 assertion)
+
+*/
 
 require __DIR__ . "/vendor/autoload.php";
 
@@ -19,12 +18,13 @@ final class Test extends TestCase
 {
     public function test_Hello()
     {
+        ob_start(); // not naturaly and ugly
+
         $_GET['name'] = "Fabian";
 
-        ob_start(); // not naturaly and ugly
-        include "hello.php";
-        $content = ob_get_clean();
+        include "../../../main/framework/app/01.php";
 
+        $content = ob_get_clean();
         $this->assertEquals("Hello Fabian", $content);
     }
 }

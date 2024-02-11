@@ -1,5 +1,3 @@
-# Routes project
-
 ~~~sh
 composer create-project symfony/skeleton routes
 

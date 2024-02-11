@@ -1,11 +1,4 @@
 <?php 
-
-/**
- * The Carbon class is inherited from the PHP DateTime class.
- * 
- * composer require nesbot/carbon
- */
-
 require __DIR__ . '/vendor/autoload.php';
 
 use Carbon\Carbon;
