@@ -1,23 +1,24 @@
 <?php
-/**
- * Front Controller - front.php
- * 
- * Until now our application has only one page.
- * Let's extract the common code and create the framework.
- * 
- * The trick is the usage of Request::getPathInfo() which ...
- * removes the front controller script name.
- * 
- * composer require symfony/http-foundation
- * php -S localhost:8000 front.php
- * 
- * http://localhost:8000/hello
- *      Hello World
- * http://localhost:8000/bye
- *      Goodbye!
- * http://localhost:8000/front.php
- *      Page not found
- */
+/*
+    front_controller/front.php - Single Entry Application
+
+    Until now our application has only one page.
+    Let's add another page that says goodbye.
+
+    The trick is the usage of Request::getPathInfo() which returns the front controller script name.
+    $map associates URL paths with their corresponding PHP script paths.
+
+    cd github/php-pages/main/framework/front_controller/
+    composer require symfony/http-foundation
+    php -S localhost:8000 front.php
+
+    http://localhost:8000/hello
+        Hello World
+    http://localhost:8000/bye
+        Goodbye!
+    http://localhost:8000/front.php
+        Page not found
+*/
 
 ini_set('display_errors', 1);
 require_once __DIR__.'/vendor/autoload.php';
