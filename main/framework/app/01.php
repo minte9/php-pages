@@ -1,6 +1,6 @@
 <?php
 /*
-    app/01.php - HTTP Response
+    app/01.php
 
     cd github/php-pages/main/framework/app/
     php -S localhost:8000
