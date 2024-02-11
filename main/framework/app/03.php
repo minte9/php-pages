@@ -4,7 +4,6 @@
 
     http://localhost:8000/02.php?name=<script>alert('Hack!');</script>
         XSS attempt - working
-
     http://localhost:8000/03.php?name=<script>alert('Hack!');</script>
         XSS attempt - fixed
 */

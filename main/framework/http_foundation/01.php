@@ -14,6 +14,8 @@
         Hello World
     http://localhost:8000/01.php?name=Fabien
         Hello Fabien
+    http://localhost:8000/01.php?name=<script>alert('Hack!');</script>
+        XSS attempt - fixed
 */
 
 require_once __DIR__.'/vendor/autoload.php';
@@ -21,10 +23,11 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 $request = Request::createFromGlobals(); // from PHP global variables
-$name = $request->get('name', 'World');
 
-$response = new Response(sprintf('Hello %s', 
-    htmlspecialchars($name, ENT_QUOTES, 'UTF-8')
-));
+// $name = $_GET['name'] ?? "Wolrd"; 
+// printf("Hello %s", htmlspecialchars($name, ENT_QUOTES, 'UTF-8'));
 
-$response->send(); // Response object back to the client
+$name = $request->get('name', 'Foundation');
+$response = new Response(sprintf('Hello %s', htmlspecialchars($name, ENT_QUOTES, 'UTF-8')));
+$response->send(); 
+    // Response object back to the client

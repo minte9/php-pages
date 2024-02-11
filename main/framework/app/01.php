@@ -7,7 +7,6 @@
 
     http://localhost:8000/01.php?name=John
         Hello John
-
     http://localhost:8000/01.php
         Warning: Undefined array key "name" 
 */
