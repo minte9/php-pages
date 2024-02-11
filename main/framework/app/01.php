@@ -2,6 +2,9 @@
 /*
     app/01.php - HTTP Response
 
+    cd github/php-pages/main/framework/app/
+    php -S localhost:8000
+
     http://localhost:8000/01.php?name=John
         Hello John
 
