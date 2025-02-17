@@ -1,4 +1,5 @@
-<?php
+<?php 
+// vendor/VendorA/Logger.php
 
 namespace VendorA;
 
