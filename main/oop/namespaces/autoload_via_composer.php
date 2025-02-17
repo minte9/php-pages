@@ -1,6 +1,7 @@
 <?php
 /**
-    Instead of manually creating autoload.php, we can use Composer for PSR-4 autoloading.
+    Instead of manually creating autoload.php, 
+    we can use Composer for PSR-4 autoloading.
 
     Create composer.json:
 
@@ -22,7 +23,8 @@
 
     > composer dump-autoload
 
-        Project structure will be:
+    Project structure will be:
+
         my_project/
             vendor/
                 composer/
@@ -49,7 +51,7 @@ $loggerB = new LoggerB();
 $loggerB->log("Logging with vendorB");
 
 /**
-    > php autoload_composer.php
+    > php autoload_via_composer.php
 
     VendorA Logger: Logging with vendorA
     VendorB Logger: Logging with vendorB
