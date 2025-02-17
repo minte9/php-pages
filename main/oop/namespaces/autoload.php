@@ -1,4 +1,5 @@
-<?php
+<?php // autoload.php
+
 /**
     This autoloader automatically converts namespace paths into file paths 
     and include them dynamically.
