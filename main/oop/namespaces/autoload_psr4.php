@@ -16,7 +16,7 @@
 
 require("autoload.php");
 
-use vendorA\Logger as LoggerA;
+use vendorA\Logger as LoggerA; // alias
 use vendorB\Logger as LoggerB;
 
 $loggerA = new LoggerA();
