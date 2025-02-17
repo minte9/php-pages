@@ -26,7 +26,7 @@ $loggerB = new LoggerB();
 $loggerB->log("Logging with vendorB");
 
 /**
-    > php autoload_way.php
+    > php autoload_psr4.php
 
     VendorA Logger: Logging with vendorA
     VendorB Logger: Logging with vendorB
