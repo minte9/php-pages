@@ -25,7 +25,7 @@ $logger = new Logger();
 $logger->log("Message from logger");
 
 /**
-    Output:
+    > php no_collision.php
 
     VendorB Logger: Message from logger
  */

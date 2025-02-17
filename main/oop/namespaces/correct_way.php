@@ -19,7 +19,7 @@ $loggerB = new \vendorB\Logger();
 $loggerB->log("Logging with vendorB");
 
 /**
-    Output: 
+    > php correct_way.php 
 
     VendorA Logger: Logging with vendorA
     VendorB Logger: Logging with vendorB
