@@ -1,7 +1,7 @@
 <?php
 /**
-    Instead of manually creating autoload.php, 
-    we can use Composer for PSR-4 autoloading.
+    Instead of manually creating autoload.php, we can use Composer for PSR-4 autoloading.
+    This method is more scalable and aligns with modern PHP development.
 
     Create composer.json:
 
