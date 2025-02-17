@@ -1,0 +1,17 @@
+{
+    "name": "oop/namespaces",
+    "authors": [
+        {
+            "name": "minte9",
+            "email": "catalinprescure@gmail.com"
+        }
+    ],
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "vendorA\\": "vendor/vendorA/",
+            "vendorB\\": "vendor/vendorB/"
+        }
+    }
+}
