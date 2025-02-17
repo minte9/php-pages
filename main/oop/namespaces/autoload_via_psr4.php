@@ -10,11 +10,11 @@
                 Logger.php
             VendorB/
                 Logger.php
-    autoload.php
-    autoload_way_psr4.php
+    autoload_spl.php
+    autoload_via_psr4.php
  */
 
-require("autoload.php");
+require("autoload_custom.php");
 
 use vendorA\Logger as LoggerA; // alias
 use vendorB\Logger as LoggerB;
@@ -26,7 +26,7 @@ $loggerB = new LoggerB();
 $loggerB->log("Logging with vendorB");
 
 /**
-    > php autoload_way_psr4.php
+    > php autoload_via_psr4.php
 
     VendorA Logger: Logging with vendorA
     VendorB Logger: Logging with vendorB

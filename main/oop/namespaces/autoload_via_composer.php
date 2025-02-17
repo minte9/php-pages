@@ -12,8 +12,8 @@
             ...
             "autoload": {
                 "psr-4": {
-                    "VendorA\\": "vendor/VendorA/",
-                    "VendorB\\": "vendor/VendorB/"
+                    "VendorA\\": "vendor/vendorA/",
+                    "VendorB\\": "vendor/vendorB/"
                 }
             }
         }
@@ -34,7 +34,7 @@
                 VendorB/
                     Logger.php
                 autoload.php
-        autoload_way_composer.php
+        autoload_via_composer.php
  */
 
 require "vendor/autoload.php"; // Now using Composer's autoload
