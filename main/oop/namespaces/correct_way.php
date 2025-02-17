@@ -3,7 +3,7 @@
     The correct way of using classes correctly in a script.
     We can use both Logger classes without issue.
 
-    This is way modern PHP development, with Composer and PSR4-autoloading, 
+    This is why modern PHP development, with Composer and PSR4-autoloading, 
     relies heavely on namespaces.
  */
 
