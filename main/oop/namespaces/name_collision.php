@@ -19,6 +19,8 @@ class Logger {
 }
 
 /**
-    php old_way.php
-    PHP Fatal error:  Cannot declare class Logger, because the name is already in use 
+    > php old_way.php
+
+    PHP Fatal error:  
+    Cannot declare class Logger, because the name is already in use.
  */
