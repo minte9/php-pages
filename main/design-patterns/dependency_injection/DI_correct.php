@@ -4,7 +4,8 @@
  * Dependency Injection
  * 
  * The dependency class is injected via constructor.
- * This make the service more flexable and testable, we can easily swap the logger implementation.
+ * This make the service more flexable and testable.
+ * We can easily swap the logger implementation.
  */
 
 interface LoggerInterface {
