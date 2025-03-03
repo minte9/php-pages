@@ -1,12 +1,12 @@
 <?php
 /**
- * Dependency Injection with PHP-DI makes unit testing easier.
+ * Dependency Injection makes unit testing easier.
  * It allows us to use mock objects.
  * 
  * If we instantiate FileLogger or ConsoleLogger directly in UserService, 
  * it makes UnitTesting harder. Test will actually write logs to file or console.
  * 
- * With PHP-DI, we can pass mock object instead of a real logger.
+ * With DI, we can pass mock object instead of a real logger.
  * 
  * Install PHPUnit via Composer:
  * composer require --dev phpunit/phpunit
