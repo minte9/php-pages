@@ -1,7 +1,8 @@
 <?php
 /**
  * PHP-DI (dependency injection container) example.
- * PHP-DI will automatically resolve dependencies, making our code cleaner and more maintainable.
+ * PHP-DI will automatically resolve dependencies, making our code 
+ * cleaner and more maintainable.
  * 
  * Install PHP-DI with composer:
  * 
