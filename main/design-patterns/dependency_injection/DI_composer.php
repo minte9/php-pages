@@ -25,14 +25,14 @@
  *  composer.json
  */
 
- require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
- use Myproject\Logger\LoggerInterface;
- use Myproject\Logger\ConsoleLogger;
- use Myproject\Logger\FileLogger;
- use Myproject\UserService;
+use Myproject\Logger\LoggerInterface;
+use Myproject\Logger\ConsoleLogger;
+use Myproject\Logger\FileLogger;
+use Myproject\UserService;
 
- // Create an instance of dependency()
+// Create an instance of dependency()
 $logger = new ConsoleLogger();
 
 // Inject the dependency into the service
@@ -45,8 +45,8 @@ $service = new UserService($logger);
 $service->createUser("Jon Doe");
 
 /**
-    > php DI_composer.php
+> php DI_composer.php
 
-    [Console] log message:User Jon Doe created.
-    [File] log message:User Jon Doe created.
+[Console] log message:User Jon Doe created.
+[File] log message:User Jon Doe created.
 */
