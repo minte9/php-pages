@@ -35,5 +35,7 @@ $service = new UserService();
 $service->createUser("jon_doe");
 
 /**
-    Output log message:User jon_doe created.
+    > php DI_wrong.php
+
+    User jon_doe created.
 */

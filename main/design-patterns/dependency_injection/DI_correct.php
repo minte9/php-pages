@@ -50,6 +50,8 @@ $service = new UserService($logger);
 $service->createUser("Jon Doe");
 
 /**
+    > php DI_correct.php
+    
     [Console] log message:User Jon Doe created.
     [File] log message:User Jon Doe created.
 */
