@@ -1,7 +1,7 @@
 <?php
 
 /**
- * User Servici (Dependant Class)
+ * User Service (Dependant Class)
  */
 
 namespace Myproject;
