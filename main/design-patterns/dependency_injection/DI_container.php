@@ -5,8 +5,10 @@
  * cleaner and more maintainable.
  * 
  * Install PHP-DI with composer:
- * 
  * composer require php-di/php-di
+ * 
+ * PHP-DI automatically injects the Logger instance into Service 
+ * without us needing to manually pass it.
  */
 
 require __DIR__ . '/vendor/autoload.php';
