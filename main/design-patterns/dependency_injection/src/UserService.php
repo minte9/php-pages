@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * User Servici (Dependant Class)
+ */
+
 namespace Myproject;
 
 use Myproject\Logger\LoggerInterface;

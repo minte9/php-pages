@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * ConsoleLogger Class (Dependency)
+ */
 namespace Myproject\Logger;
 
 use Myproject\Logger\LoggerInterface;
