@@ -1,10 +1,11 @@
 <?php
 
 /**
- * Plain PHP example.
  * 
  * The Middleware is a function that modifies the request 
  * before passing it to the next function.
+ * 
+ * Here is a simple example with plain PHP.
  */
 
 session_start();
