@@ -20,7 +20,7 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use App\Middleware\SessionMiddleware;
+use App\Middleware\SessionMiddleware2;
 use App\Logger;
 
 // Simulate a request
@@ -30,7 +30,7 @@ $request = $_GET;
 $logger = new Logger();
 
 // Run the middleware
-$md = new SessionMiddleware($logger);
+$md = new SessionMiddleware2($logger);
 $md->handle($request);
 
 // Display the session username
