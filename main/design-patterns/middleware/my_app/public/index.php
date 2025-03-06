@@ -2,6 +2,7 @@
 
 /**
  * Real-life example of using middleware.
+ * It is similar to what you'd see in frameworks like Laravel or Slim.
  * 
  * composer init
  *
