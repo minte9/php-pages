@@ -19,7 +19,7 @@ Learn and Remember - [minte9.com/php](https://www.minte9.com/php)
 # Install
 git clone https://github.com/minte9/php-pages.git
 
-# Dependencies
+# Dependencies 
 cd main/symfony/annotations/
 composer update
 
