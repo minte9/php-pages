@@ -3,11 +3,13 @@
 /**
  * Union Types
  * 
- * Prior to PHP 8.0 you could only declare a single type for
- * properties, parameters, and return types
+ * Prior to PHP 8.0 you could only declare a single type for properties, parameters, 
+ * and return types.
  * 
- * To separate each datatype use pipe
- * ?string - equivalent with string|null
+ * Starting with PHP 8.0 you can use them even in class property declaration
+ * 
+ * To separate each datatype use pipe |
+ * The ?string is equivalent with string|null
  */
 
 class MyClass 
