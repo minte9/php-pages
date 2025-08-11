@@ -3,7 +3,7 @@
 /**
  * The $request parameter is not injected into the middleware.
  * It is just passing data for processing.
- * The middleware doesn't onw the $request.
+ * The middleware doesn't own the $request.
  * 
  * Here is an example of injecting a dependency into the middleware.
  * 
