@@ -1,8 +1,6 @@
 <?php
-
 /**
- * Reference with foreach changes the array
- * Use it with care
+ * Reference with foreach changes the array (use it with care).
  */
 
 $A = [1, 2, 3, 4];
