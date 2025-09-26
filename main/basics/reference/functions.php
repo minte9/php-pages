@@ -7,7 +7,8 @@
  * In pure functional programming, passing by reference is not recommended.
  */
 
-function addUser(&$users, $user) {
+function addUser(&$users, $user): void
+{
     $users[] = $user;
 }
 
