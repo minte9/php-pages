@@ -1,5 +1,7 @@
 <?php 
-
+/**
+ * vendor/Google/Logger.php
+ */
 namespace Google;
 
 class Logger {

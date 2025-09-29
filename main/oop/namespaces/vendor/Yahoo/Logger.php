@@ -1,4 +1,7 @@
 <?php
+/**
+ * vendor/Yahoo/Logger.php
+ */
 
 namespace Yahoo;
 
