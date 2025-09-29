@@ -7,7 +7,7 @@
  * Be aware of the ; after function declaration.
  */
 
- $greet = function($name) {
+$greet = function($name) {
     return "Hello, $name!";
 };
 
