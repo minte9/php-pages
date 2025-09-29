@@ -1,6 +1,7 @@
 <?php
 /**
- * Anonymous function can inherit variables from the parent scope, using the keyword 'use'.
+ * Anonymous function can inherit variables from the parent scope, 
+ * using the keyword 'use'.
  */
 
 $message = "Welcome";
