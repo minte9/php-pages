@@ -1,18 +1,14 @@
 <?php
-
 /**
- * Callbaks with filter and map
- */
+ * Closure are useful when using callbacks.
+ * They're ofthen used in function like array_map, array_filter.
+ */ 
 
-$A = array(0, 3, 10);
+$numbers = [1, 2, 3];
 
-$B = array_filter(
-    $A, fn($x) => $x % 2 == 0 // is even
-);  
+$squares = array_map(function($n) {
+    return $n * $n;
+}, $numbers);
 
-$C = array_map(
-    fn($x) => $x*$x, $A // square
-); 
-
-print_r($B); // 0, 100
-print_r($C); // 0, 9, 100
+print_r($squares);  // 1, 4, 9
+ 
