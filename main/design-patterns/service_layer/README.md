@@ -27,7 +27,7 @@ project/
 composer install
 composer dump-autoload
 
-=------------------------------------------------
+-------------------------------------------------
 
 Why Not a Single EmailService?
 
