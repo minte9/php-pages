@@ -14,7 +14,5 @@ project/
 │
 └── index.php  
 
-
-
 composer install
 composer dump-autoload
