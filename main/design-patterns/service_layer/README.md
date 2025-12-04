@@ -26,3 +26,19 @@ project/
 
 composer install
 composer dump-autoload
+
+=------------------------------------------------
+
+Why Not a Single EmailService?
+
+If you put everything inside EmailService (view rendering, subject, attachments, building the message), 
+you end up with a class that:
+- Has too many responsibilities
+- Is harder to test
+- Becomes messy once you add more email types
+- Is tightly coupled to the internal email-building logic
+
+Example:
+What happens when you need a weekly report email, a welcome email, a password reset email, etc.?
+
+If all email-building logic lives inside EmailService, that class becomes a "God Class" quickly.
