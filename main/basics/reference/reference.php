@@ -9,6 +9,3 @@ $b = &$a; // $b references $a
 
 $b = 20;
 echo $a; // 20
-
-$a = 30;
-echo $b;  // 30

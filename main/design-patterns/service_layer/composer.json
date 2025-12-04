@@ -1,0 +1,9 @@
+{
+    "name": "service_layer/app",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}
