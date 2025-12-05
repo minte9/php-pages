@@ -7,7 +7,11 @@ class EmailService
     public function send(GenericEmail $genericEmail): void
     {
         $email = $genericEmail->build();
+        
+        echo "\n EMAIL SENT / Subject: {$email->subject} ";
 
-        echo "EMAIL SENT / Subject: {$email->subject} \n";
+        foreach ($email->attachments as $path) {
+            echo " / $path";
+        }
     }
 }

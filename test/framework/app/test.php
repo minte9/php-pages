@@ -10,7 +10,7 @@
 
 */
 
-require __DIR__ . "/vendor/autoload.php";
+require __DIR__ . "/../../vendor/autoload.php";
 
 use PHPUnit\Framework\TestCase;
 
@@ -22,7 +22,7 @@ final class Test extends TestCase
 
         $_GET['name'] = "Fabian";
 
-        include "../../../main/framework/app/01.php";
+        include "../main/framework/app/01.php";
 
         $content = ob_get_clean();
         $this->assertEquals("Hello Fabian", $content);

@@ -6,6 +6,6 @@ $app = new App\App();
 $app->run();
 
 /*
-    EMAIL SENT / Subject: Welcome 
-    EMAIL SENT / Subject: Reset Password 
+    EMAIL SENT / Subject: Welcome  / welcome_guide.pdf
+    EMAIL SENT / Subject: Reset Password  / instructions.txt
 */

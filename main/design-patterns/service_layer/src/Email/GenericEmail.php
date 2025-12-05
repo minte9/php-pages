@@ -18,7 +18,7 @@ class GenericEmail
             "to" => $this->to,
             "subject" => $this->subject, 
             "body" => $this->body,
-            "attachments" => [],
+            "attachments" => $this->attachments ?? [],
         ];
 
         foreach($this->attachments as $path) {
