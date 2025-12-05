@@ -8,8 +8,7 @@ class GenericEmail
         public string $to, 
         public string $subject, 
         public string $body, 
-        public array $attachments
-    ){}
+        public array $attachments) {}
 
     public function build(): object
     {
