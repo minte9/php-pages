@@ -13,5 +13,10 @@ class EmailService
         foreach ($email->attachments as $path) {
             echo " / $path";
         }
+
+        /*
+            EMAIL SENT / Subject: Welcome  / welcome_guide.pdf
+            EMAIL SENT / Subject: Reset Password  / instructions.txt
+        */
     }
 }
