@@ -9,7 +9,7 @@ class GenericEmail
         public string $subject, 
         public string $body, 
         public array $attachments
-    ) {}
+    ){}
 
     public function build(): object
     {
