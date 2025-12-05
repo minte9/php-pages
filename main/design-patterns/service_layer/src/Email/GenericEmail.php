@@ -12,7 +12,7 @@ class GenericEmail
 
     public function build(): object
     {
-        // Simulate mail object
+        // Simulate mailable object
         $mail = [
             "to" => $this->to,
             "subject" => $this->subject, 
@@ -20,10 +20,12 @@ class GenericEmail
             "attachments" => $this->attachments ?? [],
         ];
 
+        // Add attachments
         foreach($this->attachments as $path) {
             $this->attach($path);
         }
 
+        // Return mailable
         return (object) $mail;
     }
 
