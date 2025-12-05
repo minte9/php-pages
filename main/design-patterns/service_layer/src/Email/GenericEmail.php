@@ -16,7 +16,7 @@ class GenericEmail
         // Simulate mail object
         $mail = [
             "to" => $this->to,
-            "subject" => $this->subject,
+            "subject" => $this->subject, 
             "body" => $this->body,
             "attachments" => [],
         ];
