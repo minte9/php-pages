@@ -12,21 +12,19 @@ class App
         $service = new EmailService();
 
         // Welcome email
-        $welcome = new GenericEmail(
+        $service->send(new GenericEmail(
             "john@example.com",
             "Welcome",
             "Hello John, welcome!",
             ["welcome_guide.pdf"]
-        );
-        $service->send($welcome);
+        ));
 
         // Password reset email
-        $resetEmail = new GenericEmail(
+        $service->send(new GenericEmail(
             "john@example.com",
             "Reset Password",
             "Click this to reset password.",
             ["instructions.txt"]
-        );
-        $service->send($resetEmail);
+        ));
     }
 }
